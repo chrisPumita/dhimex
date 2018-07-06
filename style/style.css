@@ -1,0 +1,560 @@
+    /*	 ESTILOS GENERALES	*/
+:root {
+	--grey1:  #73797c;
+	--grey2: #bec0c2;
+	--aqua: #54c0d3;
+
+	--greyHigh: #868992;
+	--greyMed: #a5abb8;
+	--textHover: #DDDDDD;
+	--whitteSolid: #FFF;
+	--blackSolid:  #000000;
+	--degrayBlack:  #000000d4;
+	--textFocus:  #000000;
+	--degrayBlackLow:  #0000007d;
+	--greenTrasparente:  #56af3185;
+	--google: #4F6A77;
+}
+
+body{
+    display: block;
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	display: contents;
+	overflow-x: hidden;
+    background-color: var(--whitteSolid) !important;
+}
+
+* {
+    transition: width 2s;
+}
+
+a, a:link, a:hover, a:visited {
+	text-decoration: none !important;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+
+.colorDegradado {
+    background: rgba(38,38,38,1);
+    background: -moz-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(32,32,32,0.8) 20%, rgba(23,23,23,0.8) 50%, rgba(10,10,10,0.8) 80%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(38,38,38,1)), color-stop(20%, rgba(32,32,32,0.8)), color-stop(50%, rgba(23,23,23,0.8)), color-stop(80%, rgba(10,10,10,0.8)));
+    background: -webkit-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(32,32,32,0.8) 20%, rgba(23,23,23,0.8) 50%, rgba(10,10,10,0.8) 80%);
+    background: -o-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(32,32,32,0.8) 20%, rgba(23,23,23,0.8) 50%, rgba(10,10,10,0.8) 80%);
+    background: -ms-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(32,32,32,0.8) 20%, rgba(23,23,23,0.8) 50%, rgba(10,10,10,0.8) 80%);
+    background: linear-gradient(to bottom, rgba(38,38,38,1) 0%, rgba(32,32,32,0.8) 20%, rgba(23,23,23,0.8) 50%, rgba(10,10,10,0.8) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', endColorstr='#0a0a0a', GradientType=0 );
+}
+
+.colorSemiDegradado {
+    background: rgba(143,143,143,0.3);
+    background: -moz-linear-gradient(top, rgba(143,143,143,0.3) 0%, rgba(0,0,0,0.37) 25%, rgba(0,0,0,0.47) 66%, rgba(31,31,31,0.56) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(143,143,143,0.3)), color-stop(25%, rgba(0,0,0,0.37)), color-stop(66%, rgba(0,0,0,0.47)), color-stop(100%, rgba(31,31,31,0.56)));
+    background: -webkit-linear-gradient(top, rgba(143,143,143,0.3) 0%, rgba(0,0,0,0.37) 25%, rgba(0,0,0,0.47) 66%, rgba(31,31,31,0.56) 100%);
+    background: -o-linear-gradient(top, rgba(143,143,143,0.3) 0%, rgba(0,0,0,0.37) 25%, rgba(0,0,0,0.47) 66%, rgba(31,31,31,0.56) 100%);
+    background: -ms-linear-gradient(top, rgba(143,143,143,0.3) 0%, rgba(0,0,0,0.37) 25%, rgba(0,0,0,0.47) 66%, rgba(31,31,31,0.56) 100%);
+}
+
+/* HEADER  INICIO*/
+#header{
+	width: 100%;
+	height: 100vh;
+}
+
+.header{
+	width: 100%;
+	height: 80%;
+    position: relative;
+    background: url(../image/fondo-header.png) center no-repeat;
+    background-size: cover;
+	display: flex;
+}
+
+.ContMenu{
+	z-index: 1;
+	width: 30%;
+	height: 100%;
+/*	background-color: var(--grey1); */
+}
+.ContX{
+	z-index: 0;
+	width: 35%;
+	height: 100%;
+}
+.ContLinksMenu{
+    width: 35%;
+    height: 70%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+.cont2Link{
+    width: 90%;
+    height: 35%;
+    display: flex;
+}
+
+.contLink{
+	text-align: center;
+	width: 100%;
+	margin: 10px;
+	color: var(--textHover);
+    display: block;
+}
+
+.imgLink, .tiitleLink{
+	margin-top: 15px;
+	width: 100%;
+	height: 50%;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.Contlogo{
+	width: 70%;
+	height: 25%;
+}
+
+.ContmeniItems{
+	width: 100%;
+	height: 70%;
+}
+
+.logoHeader{
+	width: 50%;
+	margin: 15%;
+}
+.gpoBotones{
+	margin-top: 20%;
+}
+.btn-group .buttonMenu {
+    background-color: var(--grey1); /* Green background */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    font-size: 1.5em;
+    text-align: -webkit-left;
+    border: var(--grey1) solid 1px;
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: var(--aqua);
+    border: var(--aqua) solid 0px;
+}
+
+.xDhimex {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    right: 25%;
+}
+
+/*	HEADER FIN*/
+/*INICIO CONTENIDO*/
+
+#contenido{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    background: url(../image/fondoX.png) 100% 0% no-repeat;
+    /* background-size: cover; */
+    /* margin: 24px; */
+    display: block;
+    margin-top: -20vh;
+}
+
+.ContQuienes{
+	    display: flex;
+}
+
+.ContQuienes, .ContBanner, .ContProductos, .ContBannerServ, .ContCuentas{
+	width: 100%;
+	height: auto;
+}
+.ContImagesAbout{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContAboutText{
+	width: 60%;
+	display: block;
+}
+.imgAbout{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.ContTiitle{
+	width: 40%;
+}
+
+.ContTxtAbout{
+	padding: 5%;
+}
+
+.txtAbout{
+	text-align: left;
+    font-size: 3em;
+    border-bottom: var(--grey1) solid 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.gralBoton{
+	background-color: var(--grey1);
+    color: white;
+    padding: 11px 0px;
+    cursor: pointer;
+    width: 25%;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    border: var(--grey1) solid 1px;
+}
+/*		BOTON GENERAL	*/
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--grey1);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*	BANNER */
+.ContBanner{
+	position: relative;
+    background: url(../image/banner1Machines.jpg) center no-repeat fixed;
+    background-size: cover;
+	display: flex;
+	
+}
+.contMyBanner{
+	width: 100%;
+	height: 200px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BannerTxt{
+	width: 60%;
+}
+.BannerBoton{
+	width: 40%;
+}
+
+.BannerBoton, .BannerTxt{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txtBannerInfo{
+	font-size: 3em;
+	color: var(--textHover);
+}
+
+.ContTiitleProductos{
+	width: 40%;
+    float: right;
+    position: relative;
+}
+
+.containerProductos{
+	width: 100%;
+	height: auto;
+    display: inline-block;
+}
+.ContProductos{
+	display: block;
+}
+
+
+/*Ajustando los productos*/
+
+.contHijoServ {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* display: block; */
+    width: 23%;
+    height: 200px;
+    margin: 1% 1% 1% 1%;
+    text-align: center;
+    /* font-size: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: 3px solid var(--aqua);
+}
+.FourBanner{
+	width: 100%;
+	height: auto;
+}
+.contServiceHijo{
+	border: 3px solid var(--textHover);
+	height: auto;
+	display: block;
+	color: var(--aqua);
+}
+.ContBannerServ{
+	width: 100%;
+	height: auto;
+	position: relative;
+    background: url(../image/banner2Services.jpg) center no-repeat fixed;
+    background-size: cover;
+	display: flex;
+}
+
+.tituloBanner{
+	font-size: 1.5em;
+}
+
+.imgServices {
+    margin: 4%;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+    width: 80px;
+    height: 80px;
+}
+.detailsServices{
+	font-size: .8em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+.ContCuentas{
+	height: 300px;
+}
+
+.imgCuenta{
+    height: 100px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* display: block; */
+    width: 18%;
+    height: auto;
+    margin: 2% 1% 2% 1%;
+    text-align: center;
+    /* font-size: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    /* border: 3px solid var(--aqua); */
+}
+
+.ContCuentas{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangulo {
+    fill: var(--grey1);
+    stroke: var(--grey1);
+    stroke-width: 0;
+}
+
+.contTriangulo {
+    /* width: 954px; */
+    height: 190%;
+    right: 40%;
+    /* top: -114px; */
+    bottom: 0%;
+    position: absolute;
+}
+
+#footer{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.ContPie{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.ContEnlaces{
+	width: 100%;
+	height: auto;
+	background-color: var(--grey2);
+	display: flex;
+	font-size: .8em;
+	color: var(--grey1);
+}
+
+.ContLinksPie{
+    width: 33.33%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    /* margin: 1% 5% 1% 5%; */
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.borderPie{
+	    border-left: 3px solid var(--textHover);
+}
+.logoPie{
+	width: 100px;
+}
+
+.buttonPie {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--aqua);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonPie:hover{
+	background-color: var(--grey1);
+}
+
+li, a {
+	text-decoration: none;
+	list-style:none;
+	}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 45px;
+}
+
+
+.input-field {
+    width: 100%;
+    height: 30px;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    margin: 5px;
+}
+
+.input-field:focus {
+    border: 2px solid var(--aqua);
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: var(--aqua);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+.news{
+	    width: 90%;
+    	margin-left: 10%;
+}
+
+.titlePlie{
+	padding-left: 10px;
+	text-align: left;
+	color: black;
+}
+.linksPies{
+	    text-align: -webkit-auto;
+}
+
+.ContCopy{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	color: var(--whitteSolid);
+	background-color: var(--grey1);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: .8em;
+}
+
+.contRedesFooter{
+	position: absolute;
+    right: 10px;
+}
+
+.imgRedes{
+	margin-left: 10px;
+	width: 30px;
+}
+/*FIN DE CONTENIDO*/
