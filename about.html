@@ -22,7 +22,7 @@
 				  </a>	
 				</div>
 				<div class="topnav" id="myTopnav">
-				  <a class="active" href="#news">NOSOTROS</a>
+				  <a class="onFocus" href="#news">NOSOTROS</a>
 				  <a href="#contact">CURRICULUM</a>
 				  <!---
 				  <div class="dropdown">
@@ -104,7 +104,7 @@
 
 		<div class="ContVAC">
 			<div class="ContVideo">
-				<video class="video" controls autoplay loop>
+				<video class="video" controls autoplay loop muted playsinline>
 				  <source src="media/introducingDhimex.mp4" type="video/mp4">
 				  <source src="mov_bbb.ogg" type="video/ogg">
 				  Your browser does not support HTML5 video.
@@ -120,9 +120,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							consequat.
 						</p>
 						<div class="texto-vertical-1">ALIANZAS</div>
 					</div>
@@ -137,9 +135,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							consequat. 
 						</p>
 						<div class="texto-vertical-1">CONCEPTOS</div>
 					</div>
@@ -178,7 +174,64 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
+
+		<div class="ContBanner ImgBanner2">
+			<div class="contMyBanner colorSemiDegradado">
+				<div class="BannerTxt">
+					<p class="txtBannerInfo">DHIMEX una empresa de resultados</p>
+				</div>
+				<div class="BannerBoton">
+					<button class="button" style="vertical-align:middle"><span>Saber más</span></button>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="sectors">
+			<div class="ContTitulo">
+				<h1 class="tTittle">SECTORES DE MERCADO</h1>
+			</div>
+			<div id="myBtnFilContainer">
+			  <button class="fbtn active" onclick="filterSelection('all')"> VER TODO</button>
+			  <button class="fbtn" onclick="filterSelection('comercial')">Construcción Comercial</button>
+			  <button class="fbtn" onclick="filterSelection('residencial')">Construcción Residencial</button>
+			  <button class="fbtn" onclick="filterSelection('ligera')">Industria Ligera</button>
+			</div>
+
+			<div class="container">
+				<div class="filterDiv comercial">
+			  		<img class="imagenAjustada img" src="image/mercado/mercado1.jpg">
+			  		<div class="cover top">
+	                  <h3 class="tittle">Cancha de Tennis</h3>
+                	</div>
+				</div>
+			  <div class="filterDiv comercial">Centros comerciales</div>
+			  <div class="filterDiv comercial">Escuelas</div>
+			  <div class="filterDiv comercial">Estadios</div>
+			  <div class="filterDiv comercial">Hospitales</div>
+			  <div class="filterDiv comercial">Hoteles</div>
+			  <div class="filterDiv comercial">Iglesias</div>
+			  <div class="filterDiv comercial">Oficinas</div>
+			  <div class="filterDiv comercial">Universidades</div>
+
+			  <div class="filterDiv residencial">Casas</div>
+			  <div class="filterDiv residencial">Departamentos</div>
+			  <div class="filterDiv residencial">Lofts</div>
+			  <div class="filterDiv residencial">Residencias</div>
+
+
+			  <div class="filterDiv ligera">Alimenticia</div>
+			  <div class="filterDiv ligera">Automotriz</div>
+			  <div class="filterDiv ligera">Electrónica</div>
+			  <div class="filterDiv ligera">Farmacéutica</div>
+			  <div class="filterDiv ligera">Metalmecánica</div>
+			  <div class="filterDiv ligera">Transformación</div>
+
+			</div>
+		</div>
+
+
 	</section>
 
 	<footer id="footer">
@@ -247,5 +300,53 @@
 	    }
 	}
 	</script>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "showFil");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showFil");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainerF = document.getElementById("myBtnFilContainer");
+var btns = btnContainerF.getElementsByClassName("fbtn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var currentF = document.getElementsByClassName("active");
+    currentF[0].className = currentF[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<style>
+</style>
+
 </body>
 </html>
