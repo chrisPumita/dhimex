@@ -1609,6 +1609,7 @@ select::-ms-expand {
 }
 .txtForm{
     font-size: .7em;
+    margin-right: 5%;
 }
 
 .protectionInfo{
@@ -1618,6 +1619,8 @@ select::-ms-expand {
     text-align: -webkit-right;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .campoForm{
