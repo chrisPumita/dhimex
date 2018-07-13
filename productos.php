@@ -33,7 +33,7 @@
 		</div>
 	</header><!-- /header -->
 
-	<section id="section">
+	<section id="section" class="">
 		<div class="ContTitulo">
 			<h1 class="tTittle">CATÁLOGO DE PRODUCTOS</h1>
 		</div>
@@ -95,27 +95,164 @@
 		  		</div>
 			</div>
 		</div>
-		<!--*********  CONTENEDOR  **********-->
-		<div class="ContProd">
-			<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
-			<div class="panel">
-				<div class="ConBoxIMGProd">
-					<div class="boxIMGProd contenedorIMG">
-						<img class="img imgProd" src="image/products/motor_001.png"><br>
+	
+
+		<div id="CatalogoProductos" class="">
+<!--*********  CONTENEDOR  de producto **********-->
+			<div class="ContProd">
+				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
+				<div class="panel">
+					<div class="ConBoxIMGProd">
+						<div class="boxIMGProd contenedorIMG">
+							<img class="img imgProd" src="image/products/motor_001.png"><br>
+						</div>
+						<div class="boxTXTProd">
+							<h2 class="tService formatTXTDetails">MOTOR DISEDEL</h2><br>
+							<p class="txtDetailsPro">
+								 <strong>MARCA</strong> DIesel Gasoline		<br>
+								Modelo: CY3434				<br>
+								FRABRICANTE: CMYK MOTORS 	<br>
+							</p><br>
+							<button class="button btnAqua" style="vertical-align:middle; margin-left: 30%;"><span>Cotizar</span></button>
+						</div>
+
+					</div>
+					<div class="ConBoxDetallesProd">
+
+						<div class="detallesContenedor">
+							<div class="tabs">
+
+							   <div class="tab">
+							       <input type="radio" id="tab-11" name="tab-group-1" checked>
+							       <label for="tab-11">Descripción</label>
+
+							       <div class="content">
+								    <div class="ContContenidoDescr">
+								 		<h3 class="tService formatTXTDetails">Descripcion del producto</h3><br>
+								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+							       </div> 
+							   </div>
+
+							   <div class="tab">
+							       <input type="radio" id="tab-12" name="tab-group-1">
+							       <label for="tab-12">Detalles Técnicos</label>
+
+							       <div class="content">
+									    <h3 class="tService formatTXTDetails">Informacion Técnica</h3><br>
+								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									  	tempor incididunt ut labore et dolorenderit in voluptate velit esse
+									  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							       </div> 
+							   </div>
+
+							    <div class="tab">
+							       <input type="radio" id="tab-13" name="tab-group-1">
+							       <label for="tab-13">Video</label>
+
+							       <div class="content">
+										<iframe width="100%" height="400px" src="https://www.youtube.com/embed/N0R2qcnrMDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+									   <h3 class="tService formatTXTDetails">Miral el video del producto</h3><br><br><br>
+							       </div> 
+							   </div>
+
+							</div>
+
+						</div>
 					</div>
 				</div>
-				<div class="ConBoxDetallesProd">
-					<h2 class="tService formatTXTDetails">MOTOR DISEDEL</h2>
-					<p class="txtDetailsPro">
-						Marca: DIesel Gasoline		<br>
-						Modelo: CY3434				<br>
-						FRABRICANTE: CMYK MOTORS 	<br>
-						
-					</p>
-			  <iframe width="560" height="315" src="https://www.youtube.com/embed/N0R2qcnrMDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					
+			</div>
+	<!-- END PRODUCTO -->
+<!--*********  CONTENEDOR  de producto **********-->
+			<div class="ContProd">
+				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
+				<div class="panel">
+					<div class="ConBoxIMGProd">
+						<div class="boxIMGProd contenedorIMG">
+							<img class="img imgProd" src="image/products/motor_001.png"><br>
+						</div>
+						<div class="boxTXTProd">
+							<h2 class="tService formatTXTDetails">MOTOR DISEDEL</h2><br>
+							<p class="txtDetailsPro">
+								 <strong>MARCA</strong> DIesel Gasoline		<br>
+								Modelo: CY3434				<br>
+								FRABRICANTE: CMYK MOTORS 	<br>
+							</p><br>
+							<button class="button btnAqua" style="vertical-align:middle; margin-left: 30%;"><span>Cotizar</span></button>
+						</div>
+
+					</div>
+					<div class="ConBoxDetallesProd">
+
+						<div class="detallesContenedor">
+							<div class="tabs">
+
+							   <div class="tab">
+							       <input type="radio" id="tab-21" name="tab-group-2" checked>
+							       <label for="tab-21">Descripción</label>
+
+							       <div class="content">
+								    <div class="ContContenidoDescr">
+								 		<h3 class="tService formatTXTDetails">Descripcion del producto</h3><br>
+								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+							       </div> 
+							   </div>
+
+							   <div class="tab">
+							       <input type="radio" id="tab-22" name="tab-group-2">
+							       <label for="tab-22">Detalles Técnicos</label>
+
+							       <div class="content">
+									    <h3 class="tService formatTXTDetails">Informacion Técnica</h3><br>
+								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									  	tempor incididunt ut labore et dolorenderit in voluptate velit esse
+									  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							       </div> 
+							   </div>
+
+							    <div class="tab">
+							       <input type="radio" id="tab-23" name="tab-group-2">
+							       <label for="tab-23">Video</label>
+
+							       <div class="content">
+										<iframe width="100%" height="400px" src="https://www.youtube.com/embed/N0R2qcnrMDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+									   <h3 class="tService formatTXTDetails">Miral el video del producto</h3><br><br><br>
+							       </div> 
+							   </div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+					<div class="ContPag">
+						<div class="pagination">
+							  <a href="#">&laquo;</a>
+							  <a href="#" class="activePage">1</a>
+							  <a href="#">2</a>
+							  <a href="#">3</a>
+							  <a href="#">4</a>
+							  <a href="#">5</a>
+							  <a href="#">6</a>
+							  <a href="#">&raquo;</a>
+						</div>
+					</div>	
 				</div>
 			</div>
+	<!-- END PRODUCTO -->
 
 
 <!--
@@ -129,7 +266,6 @@
 			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 -->
-		</div>
 		
 
 	</section>
@@ -200,10 +336,14 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     } else {
+
       panel.style.maxHeight = panel.scrollHeight + "px";
+      //panel.style.maxHeight = "100%";
     } 
   });
 }
 </script>
+
+
 </body>
 </html>
