@@ -18,9 +18,9 @@
 				</div>
 				<div class="topnav" id="myTopnav">
 				  <a href="about.html">NOSOTROS</a>
-				  <a href="curriculum.html">CURRICULUM</a>
 				  <a class="onFocus" href="productos.php">PRODUCTOS</a>
 				  <a href="servicios.html">SERVICIOS</a>
+				  <a href="capacitacion.php">CAPACITACIÓN</a>
 				  <a href="contacto.html">CONTACTO</a>
 				  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 				</div>
@@ -70,19 +70,6 @@
 				
 			</div>
 			<div class="ContFiltros">
-				<p>FILTRAR</p>
-				<div class="caja">
-						<select name="conocimiento">
-						<option value="all">Ver Todos</option>
-						<option value="costeMin">Precio: El más bajo primero</option>
-						<option value="costeMax">Precio: Mas caros primero</option>
-						<option value="nameASC">Nombre del Producto: A a Z</option>
-						<option value="nameDES">Nombre del Producto: Z a A</option>
-						<option value="stok">Stok</option>
-						<option value="RelMin">Menos Relevancia</option>
-						<option value="RelMax">Mayor Relevancia</option>
-						</select>
-		  		</div>
 		  		<p>MOSTRAR</p>
 				<div class="caja">
 						<select name="conocimiento">
@@ -98,6 +85,7 @@
 	
 
 		<div id="CatalogoProductos" class="">
+			<h2 class="productoMje">MOSTRANDO PRODUCTOS DE "CMYK MOTORS"</h2><br>
 <!--*********  CONTENEDOR  de producto **********-->
 			<div class="ContProd">
 				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
@@ -278,27 +266,28 @@
 					<p>55 3635-6530</p>
 					<p>dhimex-cdmexico@dhimex.com</p>
 					<p>Torongil No. 180- A Victorias de las Democracias CDMX. CP 02810</p>
-					<button class="buttonPie" style="vertical-align:middle"><span>Contacto </span></button>
+					<a href="contacto.html#form" title="Contactar a DHIMEX"><button class="buttonPie" style="vertical-align:middle"><span>Contacto </span></button></a>
 				</div>
 				<div class="ContLinksPie borderPie">
 					<h3 class="titlePlie">SECTORES DE MERCADO</h3>
 					<ul class="linksPies">
-					  <li>Construcción Comercial</li>
-					  <li>Construccion Residencial</li>
-					  <li>Indistria Lijera</li>
+						<a href="about.html#sectores" title="Servicios"><li>Construcción Comercial</li></a>
+						<a href="about.html#sectores" title="Servicios"><li>Construccion Residencial</li></a>
+						<a href="about.html#sectores" title="Servicios"> <li>Indistria Lijera</li></a>
 					</ul>
 					<h3 class="titlePlie">NUESTROS SERVICIOS</h3>
 					<ul class="linksPies">
-					  <li>Capacitación </li>
-					  <li>Cursos</li>
-					  <li>Conferencias</li>
-					  <li>Software</li>
+					  <a href="capacitacion.php" title="Servicios"><li>Capacitación </li></a>
+					  <a href="capacitacion.php" title="Servicios"><li>Cursos</li></a>
+					  <a href="https://dhimex.webex.com/mw3300/mywebex/default.do?siteurl=dhimex"><li>Conferencias</li></a>
+					  <a href="http://epump-flo.com/reg/login.aspx?ReturnUrl=%2fpumpselection%2fstorefront.aspx%3fdirname%3ddhimex&dirname=dhimex" title="">
+					  <li>Software</li></a>
 					</ul>
 				</div>
 				<div class="ContLinksPie borderPie">
 					<h3 class="titlePlie">ENLACES RÁPIDOS</h3>
 					<ul class="linksPies">
-					  <li>Aviso de Privacidad</li>
+					  <a href="" title=""></a><li>Aviso de Privacidad</li>
 					  <li>Legal</li>
 					  <li>Bolsa de Trabajo</li>
 					  <li>Noticias</li>
@@ -316,9 +305,9 @@
 			</div>
 			<div class="ContCopy">
 				<div class="contRedesFooter">
-					<img class="imgRedes" src="icons/F_icon.png">
-					<img class="imgRedes" src="icons/F_icon.png">
-					<img class="imgRedes" src="icons/F_icon.png">
+					<a href="https://www.facebook.com/DhimexDF" title="facebook de dhimex" target="_blank"><img class="imgRedes" src="icons/face.png"></a>
+					<a href="https://twitter.com/DhimexDF" title="Twitter de DHIMEX" target="_blank"><img class="imgRedes" src="icons/twitter.png"></a>
+					<a href="https://www.youtube.com/user/DhimexVideos/" title="Canal de Youtube de DHIMEX" target="_blank"><img class="imgRedes" src="icons/youtube.png"></a>
 				</div>
 				2018.© DHIMEX CIudad de México S.A de C.V. Derechos Reservados 
 			</div>
