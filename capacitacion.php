@@ -94,7 +94,699 @@
 				  	echo "<!-- 	CONTENEDOR '.$i.' ->  -->";
 				}
 ?>
+<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso tecnico">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/tecnicoB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Curso Técnico <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso comercial">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/off.png">
+						<img class="imgType" src="icons/comercialB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Presentación Comercial<br>
+							<span class="txtcodeCurso">CAS 200 Introduccion al Software<br>COD: 2930</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton noDisponible">
+				  	<button class="button btnAqua btnCurso noDisponible" style="vertical-align:middle;" disabled><span class="noDisponible">Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso general">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/generalB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Caracter General <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso tecnico">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/tecnicoB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Curso Técnico <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso comercial">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/off.png">
+						<img class="imgType" src="icons/comercialB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Presentación Comercial<br>
+							<span class="txtcodeCurso">CAS 200 Introduccion al Software<br>COD: 2930</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton noDisponible">
+				  	<button class="button btnAqua btnCurso noDisponible" style="vertical-align:middle;" disabled><span class="noDisponible">Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso general">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/generalB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Caracter General <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
 
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso tecnico">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/tecnicoB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Curso Técnico <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso comercial">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/off.png">
+						<img class="imgType" src="icons/comercialB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Presentación Comercial<br>
+							<span class="txtcodeCurso">CAS 200 Introduccion al Software<br>COD: 2930</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton noDisponible">
+				  	<button class="button btnAqua btnCurso noDisponible" style="vertical-align:middle;" disabled><span class="noDisponible">Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso general">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/generalB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Caracter General <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso tecnico">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/tecnicoB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Curso Técnico <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso comercial">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/off.png">
+						<img class="imgType" src="icons/comercialB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Presentación Comercial<br>
+							<span class="txtcodeCurso">CAS 200 Introduccion al Software<br>COD: 2930</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton noDisponible">
+				  	<button class="button btnAqua btnCurso noDisponible" style="vertical-align:middle;" disabled><span class="noDisponible">Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso general">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/generalB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Caracter General <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso tecnico">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/tecnicoB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Curso Técnico <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+				<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso comercial">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/off.png">
+						<img class="imgType" src="icons/comercialB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Presentación Comercial<br>
+							<span class="txtcodeCurso">CAS 200 Introduccion al Software<br>COD: 2930</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton noDisponible">
+				  	<button class="button btnAqua btnCurso noDisponible" style="vertical-align:middle;" disabled><span class="noDisponible">Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
+<!-- INIICO DE CURSO AUTOGENERATE-->
+				<div class="filterDiv contDivCurso general">
+				  <div class="ContCursoTop">
+					<div class="iconCurso">
+						<img class="imgStatus" src="icons/on.png">
+						<img class="imgType" src="icons/generalB.png">
+					</div>
+					<div class="tCurso">
+						<p class="txtTittleCurso">
+							Caracter General <br>
+							<span class="txtcodeCurso">Introduccion a bombas <br>COD: 2939</span>
+						</p>
+					</div>
+				  </div>
+				  <div class="ContCursoCenter">
+				  		<p class="txtDescCurso">
+							INICIO: 23 de agosto de 2018 <br>
+							<div class="contCoste">
+								<span class="txtcodeCurso tamCurso1">
+									<img class="imgOK" src="icons/ok.png">Abierto <br>
+									<img class="imgOK" src="icons/ok.png">Cerrado <br>
+									<img class="imgOK" src="icons/ok.png">Interno <br>
+									<img class="imgOK" src="icons/clock.png">5:30 hrs.
+									<br><br>
+								</span>
+								<span class="txtcodeCurso tamCurso2">
+									COSTO EN USD <br>
+									Material Maestro: $110 <br>
+									Material Estudiante: $55 <br>
+									Exposición: 1,100
+								</span>
+							</div>
+							<div class="txtAddres">
+								<img class="imgOK" src="icons/pin.png">
+								<span class="txtDirCurso">
+									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
+								</span>
+								
+							</div>
+						</p>
+				  </div>
+				  <div class="ContCursoBotton">
+				  	<button class="button btnAqua btnCurso disponible" style="vertical-align:middle;"><span>Contacto</span></button>
+				  </div>
+				</div>
+				<!-- END DE CURSO AUTOGENERATE-->
 <!-- INIICO DE CURSO AUTOGENERATE-->
 				<div class="filterDiv contDivCurso tecnico">
 				  <div class="ContCursoTop">
