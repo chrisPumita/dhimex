@@ -962,6 +962,7 @@ ul.breadcrumb li a:hover {
     overflow-x: scroll;
 }
 .ImgBanner2{
+        margin-top: 100px;
     background: url(../image/numbers.jpg) center no-repeat;
     background-size: cover;
         font-size: .8em;

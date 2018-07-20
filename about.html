@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="style/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<style>
-
-</style>
-
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 	<header id="headerWeb" class="">
@@ -151,31 +151,38 @@
 
 			<div class="ContSpecial">
 
-			</div>
+			     <div class="swiper-container" >
+			      <div class="swiper-wrapper">
+			        <div class="swiper-slide" style="background-image:url(media/esp_aireacondicionado.gif)">
+			          <div class="txtContMercado">
+			          	TXT
+			          </div>
+			        </span></div>
+			        <div class="swiper-slide" style="background-image:url(media/esp_calefaccion.gif)">
+			          <div class="txtContMercado">
+			          	TXT
+			          </div>
+			        </div>
+			        <div class="swiper-slide" style="background-image:url(media/esp_contraincendios.gif)">
+			          <div class="txtContMercado">
+			          	TXT
+			          </div>
+			        </div>
+			        <div class="swiper-slide" style="background-image:url(media/esp_hidraulico.gif)">
+			          <div class="txtContMercado">
+			          	TXT
+			          </div>
+			        </div>
+			        <div class="swiper-slide" style="background-image:url(media/esp_sanitario.gif)">
+			          <div class="txtContMercado">
+			          	TXT
+			          </div>
+			        </div>
+			      </div>
+			      <!-- Add Pagination -->
+			      <div class="swiper-pagination" style="position:  absolute;"></div>
+			    </div>
 
-
-			<div class="ContSliderEspecial">
-				<div class="moveSlider">
-					<div class="ContEspGIF">
-						<img class="imgGif" src="media/esp_aireacondicionado.gif" alt="Aire Acondicioando">
-					</div>
-					<div class="ContEspGIF">
-						<img class="imgGif" src="media/esp_aireacondicionado.gif" alt="Aire Acondicioando">
-						
-					</div>
-					<div class="ContEspGIF">
-						<img class="imgGif" src="media/esp_aireacondicionado.gif" alt="Aire Acondicioando">
-						
-					</div>
-					<div class="ContEspGIF">
-						<img class="imgGif" src="media/esp_aireacondicionado.gif" alt="Aire Acondicioando">
-						
-					</div>
-					<div class="ContEspGIF">
-						<img class="imgGif" src="media/esp_aireacondicionado.gif" alt="Aire Acondicioando">
-						
-					</div>
-				</div>
 			</div>
 		</div>
 
@@ -440,6 +447,28 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+		speed: 3800,
+		autoplay:4500,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true
+			
+        }
+    });
+    </script>
 
 
 </body>
