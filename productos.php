@@ -14,7 +14,7 @@
 				<div class="containerLogo">
 				  <a href="index.html">
 					<img class="logoPage" src="image/logo-dhimex.png" alt="Logo Dhimex">
-				  </a>	
+				  </a>
 				</div>
 				<div class="topnav" id="myTopnav">
 				  <a href="about.html">NOSOTROS</a>
@@ -37,7 +37,7 @@
 		<div class="ContTitulo">
 			<h1 class="tTittle">CATÁLOGO DE PRODUCTOS</h1>
 		</div>
-		
+
 		<div class="headerFiltros">
 			<div class="ContFiltros">
 				<div class="dropdown noBorder">
@@ -47,27 +47,35 @@
 				      <a href="#">CMYK MOTORS</a>
 				      <a href="#">RGB HIDRAULICA</a>
 				    </div>
-				</div> 
+				</div>
 				<div class="dropdown noBorder">
-				    <button class="dropbtn " onclick="myFunctionMenu()">Categorias<i class="fa fa-caret-down"></i></button>
+				    <!--<button class="dropbtn " onclick="myFunctionMenu()">Categorias<i class="fa fa-caret-down"></i></button>
 				    <div id="myDropdown" class="dropdown-content sizeDefin">
-					    <a href="#">TODAS</a>
-						<a href="#">Accesorios Hidráulicos </a>
-						<a href="#">Bombas</a>
-						<a href="#">Calentadores de agua</a>
-						<a href="#">Incendio</a>
-						<a href="#">Intercambiadores de calor</a>
-						<a href="#">Motores</a>
-						<a href="#">Refacciones</a>
-						<a href="#">Sistemas Hidráulicos</a>
-						<a href="#">Software</a>
-						<a href="#">Tableros de Fuerza y Control</a>
-						<a href="#">Tanques</a>
-						<a href="#">Tratamiento de Agua</a>
+					</div>
+					-->
+							<div class="caja">
 
-				    </div>
-				</div> 
-				
+								<form>
+									<select name="users" onchange="showUser(this.value)">
+										<option value="" selected>VER CATEGORÍA:</option>
+										<option value="0">VER TODAS</option>
+										<option value="1">Accesorios Hidráulicos </option>
+										<option value="2">Bombas</option>
+										<option value="3">Calentadores de agua</option>
+										<option value="4">Incendio</option>
+										<option value="5">Intercambiadores de calor</option>
+										<option value="6">Motores</option>
+										<option value="7">Refacciones</option>
+										<option value="8">Sistemas Hidráulicos</option>
+										<option value="9">Software</option>
+										<option value="10">Tableros de Fuerza y Control</option>
+										<option value="11">Tanques</option>
+										<option value="12">Tratamiento de Agua</option>
+									</select>
+								</form>
+							</div>
+				</div>
+
 			</div>
 			<div class="ContFiltros">
 		  		<p>MOSTRAR</p>
@@ -82,12 +90,15 @@
 		  		</div>
 			</div>
 		</div>
-	
+
 
 		<div id="CatalogoProductos" class="">
 			<h2 class="productoMje">MOSTRANDO PRODUCTOS DE "CMYK MOTORS"</h2><br>
-<!--*********  CONTENEDOR  de producto **********-->
-			<div class="ContProd">
+
+			<!--*********  AJAX CONT **********-->
+			<div ><b>Person info will be listed here.</b></div>
+<!--*********  CONTENEDOR  de producto ********** 			-->
+			<div id="txtHint" class="ContProd">
 				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
 				<div class="panel">
 					<div class="ConBoxIMGProd">
@@ -124,7 +135,7 @@
 								  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 									</div>
-							       </div> 
+							       </div>
 							   </div>
 
 							   <div class="tab">
@@ -137,7 +148,7 @@
 									  	tempor incididunt ut labore et dolorenderit in voluptate velit esse
 									  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 									  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							       </div> 
+							       </div>
 							   </div>
 
 							    <div class="tab">
@@ -147,7 +158,7 @@
 							       <div class="content">
 										<iframe width="100%" height="400px" src="https://www.youtube.com/embed/N0R2qcnrMDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
 									   <h3 class="tService formatTXTDetails">Miral el video del producto</h3><br><br><br>
-							       </div> 
+							       </div>
 							   </div>
 
 							</div>
@@ -156,8 +167,10 @@
 					</div>
 				</div>
 			</div>
+
 	<!-- END PRODUCTO -->
-<!--*********  CONTENEDOR  de producto **********-->
+<!--*********  CONTENEDOR  de producto 			**********-->
+
 			<div class="ContProd">
 				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
 				<div class="panel">
@@ -195,7 +208,7 @@
 								  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 									</div>
-							       </div> 
+							       </div>
 							   </div>
 
 							   <div class="tab">
@@ -208,7 +221,7 @@
 									  	tempor incididunt ut labore et dolorenderit in voluptate velit esse
 									  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 									  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							       </div> 
+							       </div>
 							   </div>
 
 							    <div class="tab">
@@ -218,7 +231,7 @@
 							       <div class="content">
 										<iframe width="100%" height="400px" src="https://www.youtube.com/embed/N0R2qcnrMDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
 									   <h3 class="tService formatTXTDetails">Miral el video del producto</h3><br><br><br>
-							       </div> 
+							       </div>
 							   </div>
 
 							</div>
@@ -237,11 +250,12 @@
 							  <a href="#">6</a>
 							  <a href="#">&raquo;</a>
 						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
-	<!-- END PRODUCTO -->
 
+
+	<!-- END PRODUCTO -->
 
 <!--
 			<button class="accordion">Section 2</button>
@@ -254,7 +268,7 @@
 			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 -->
-		
+
 
 	</section>
 
@@ -300,7 +314,7 @@
 						    <button class="buttonPie" style="vertical-align:middle"><span>Enviar </span></button>
 						  </div>
 
-					</form>	
+					</form>
 				</div>
 			</div>
 			<div class="ContCopy">
@@ -309,11 +323,11 @@
 					<a href="https://twitter.com/DhimexDF" title="Twitter de DHIMEX" target="_blank"><img class="imgRedes" src="icons/twitter.png"></a>
 					<a href="https://www.youtube.com/user/DhimexVideos/" title="Canal de Youtube de DHIMEX" target="_blank"><img class="imgRedes" src="icons/youtube.png"></a>
 				</div>
-				2018.© DHIMEX CIudad de México S.A de C.V. Derechos Reservados 
+				2018.© DHIMEX CIudad de México S.A de C.V. Derechos Reservados
 			</div>
 		</div>
 	</footer>
-
+<!---->
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -328,11 +342,33 @@ for (i = 0; i < acc.length; i++) {
 
       panel.style.maxHeight = panel.scrollHeight + "px";
       //panel.style.maxHeight = "100%";
-    } 
+    }
   });
 }
 </script>
 
+<!-- AJAX IMPLEMENTED -->
+<script>
+function showUser(str) {
+  if (str=="") {
+    document.getElementById("txtHint").innerHTML="";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("txtHint").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
 
 </body>
 </html>

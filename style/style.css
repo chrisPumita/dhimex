@@ -293,7 +293,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     background: url(../image/banner1Machines.jpg) center no-repeat fixed;
     background-size: cover;
 	display: flex;
-	
+
 }
 .contMyBanner{
 	width: 100%;
@@ -636,7 +636,7 @@ li, a {
 
 .dropdown .dropbtn {
     width: 100%;
-    font-size: 17px;    
+    font-size: 17px;
     border: none;
     outline: none;
     color: var(--blackSolid);
@@ -971,7 +971,7 @@ ul.breadcrumb li a:hover {
 /*Estilo de filtro de imagenes*/
 #myBtnFilContainer{
 	display: flex;
-    justify-content: center;	
+    justify-content: center;
         align-items: center;
 }
 
@@ -1121,7 +1121,7 @@ ul.breadcrumb li a:hover {
 
 
 /*Slider de comercio*/
-	
+
 
 /*Page Services*/
 
@@ -1170,13 +1170,14 @@ ul.breadcrumb li a:hover {
     display: block;
 }
 
-.imgBloqueDer{    
-    background: url(../image/fondoX.png) 100% 0% no-repeat;
-    background-position: right;
-        background-size: contain;
+.imgBloqueDer{
+	background: url(../image/fondoX.png) 100% 0% no-repeat;
+	background-position: right;
+	background-size: contain;
+	margin-top: -50px;
 
 }
-.imgBloqueIzq{    
+.imgBloqueIzq{
     background: url(../image/fondoXDer.png) 100% 0% no-repeat;
     background-position: left;
         background-size: contain;
@@ -1230,11 +1231,11 @@ select {
    width: 100%;
    padding: 1px;
 }
-select:focus{ 
+select:focus{
     outline: none;
     background: var(--whitteSolid);
 }
-select:hover { 
+select:hover {
     background-color: var(--aqua);
     color: var(--whitteSolid);;
 }
@@ -1323,7 +1324,7 @@ select::-ms-expand {
 .txtTCV{
     font-size: 2em;
     text-align: center;
-    
+
 }
 
 .imgProdIcon{
@@ -1394,7 +1395,7 @@ select::-ms-expand {
 
 /*TABS*/
 .tabs {
-  position: relative;   
+  position: relative;
   height: 100%; /* This part sucks */
   clear: both;
   margin: 25px 0;
@@ -1403,16 +1404,16 @@ select::-ms-expand {
   float: left;
 }
 .tab label {
-  background: #eee; 
-  padding: 10px; 
-  border: 1px solid #ccc; 
-  margin-left: -1px; 
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
   position: relative;
-  left: 1px; 
+  left: 1px;
   cursor: pointer;
 }
 .tab [type=radio] {
-  display: none;   
+  display: none;
 }
 .content {
   position: absolute;
@@ -1422,7 +1423,7 @@ select::-ms-expand {
   right: 0;
   bottom: 0;
   padding: 20px;
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
 }
 [type=radio]:checked ~ label {
   background: white;
