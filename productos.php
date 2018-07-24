@@ -93,12 +93,13 @@
 
 
 		<div id="CatalogoProductos" class="">
-			<h2 class="productoMje">MOSTRANDO PRODUCTOS DE "CMYK MOTORS"</h2><br>
+			<h2 class="productoMje">MOSTRANDO PRODUCTOS</h2><br>
 
 			<!--*********  AJAX CONT **********-->
-			<div ><b>Person info will be listed here.</b></div>
-<!--*********  CONTENEDOR  de producto ********** 			-->
 			<div id="txtHint" class="ContProd">
+				<div ><b>De clic en una categoría para comenzar a buscar</b></div>
+
+				<!--*********  CONTENEDOR  de producto **********
 				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
 				<div class="panel">
 					<div class="ConBoxIMGProd">
@@ -168,8 +169,8 @@
 				</div>
 			</div>
 
-	<!-- END PRODUCTO -->
-<!--*********  CONTENEDOR  de producto 			**********-->
+ END PRODUCTO -->
+<!--*********  CONTENEDOR  de producto
 
 			<div class="ContProd">
 				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
@@ -255,7 +256,7 @@
 			</div>
 
 
-	<!-- END PRODUCTO -->
+ END PRODUCTO -->
 
 <!--
 			<button class="accordion">Section 2</button>
