@@ -1963,3 +1963,9 @@ select::-ms-expand {
 .ac-container input:checked ~ article.ac-large {
   height: auto;
 }
+
+.founNumber{
+	padding: 10px;
+	text-align: center;
+	color: var(--grey1);
+}

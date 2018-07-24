@@ -41,24 +41,23 @@
 		<div class="headerFiltros">
 			<div class="ContFiltros">
 				<div class="dropdown noBorder">
-				    <button class="dropbtn " onclick="myFunctionMenu()">Marcas<i class="fa fa-caret-down"></i></button>
-				    <div id="myDropdown" class="dropdown-content">
-				      <a href="#">TODAS</a>
-				      <a href="#">CMYK MOTORS</a>
-				      <a href="#">RGB HIDRAULICA</a>
-				    </div>
+						<div class="caja">
+							<form>
+								<select name="users" onchange="showUser(this.value,1)">
+									<option value="" selected>MARCAS</option>
+									<option value="0">Ver Todas</option>
+									<option value="1">CMYK MOTORS</option>
+									<option value="2">RGB HIDRAULICA</option>
+								</select>
+							</form>
+						</div>
 				</div>
 				<div class="dropdown noBorder">
-				    <!--<button class="dropbtn " onclick="myFunctionMenu()">Categorias<i class="fa fa-caret-down"></i></button>
-				    <div id="myDropdown" class="dropdown-content sizeDefin">
-					</div>
-					-->
 							<div class="caja">
-
 								<form>
-									<select name="users" onchange="showUser(this.value)">
-										<option value="" selected>VER CATEGORÍA:</option>
-										<option value="0">VER TODAS</option>
+									<select name="users" onchange="showUser(this.value,2)">
+										<option value="" selected>CATEGORÍAS</option>
+										<option value="0">Ver Todas</option>
 										<option value="1">Accesorios Hidráulicos </option>
 										<option value="2">Bombas</option>
 										<option value="3">Calentadores de agua</option>
@@ -98,179 +97,6 @@
 			<!--*********  AJAX CONT **********-->
 			<div id="txtHint" class="ContProd">
 				<div ><b>De clic en una categoría para comenzar a buscar</b></div>
-
-				<!--*********  CONTENEDOR  de producto **********
-				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
-				<div class="panel">
-					<div class="ConBoxIMGProd">
-						<div class="boxIMGProd contenedorIMG">
-							<img class="img imgProd" src="image/products/motor_001.png"><br>
-						</div>
-						<div class="boxTXTProd">
-							<h2 class="tService formatTXTDetails">MOTOR DISEDEL</h2><br>
-							<p class="txtDetailsPro">
-								 <strong>MARCA</strong> DIesel Gasoline		<br>
-								Modelo: CY3434				<br>
-								FRABRICANTE: CMYK MOTORS 	<br>
-							</p><br>
-							<button class="button btnAqua" style="vertical-align:middle; margin-left: 30%;"><span>Cotizar</span></button>
-						</div>
-
-					</div>
-					<div class="ConBoxDetallesProd">
-
-						<div class="detallesContenedor">
-							<div class="tabs">
-
-							   <div class="tab">
-							       <input type="radio" id="tab-11" name="tab-group-1" checked>
-							       <label for="tab-11">Descripción</label>
-
-							       <div class="content">
-								    <div class="ContContenidoDescr">
-								 		<h3 class="tService formatTXTDetails">Descripcion del producto</h3><br>
-								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-							       </div>
-							   </div>
-
-							   <div class="tab">
-							       <input type="radio" id="tab-12" name="tab-group-1">
-							       <label for="tab-12">Detalles Técnicos</label>
-
-							       <div class="content">
-									    <h3 class="tService formatTXTDetails">Informacion Técnica</h3><br>
-								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									  	tempor incididunt ut labore et dolorenderit in voluptate velit esse
-									  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							       </div>
-							   </div>
-
-							    <div class="tab">
-							       <input type="radio" id="tab-13" name="tab-group-1">
-							       <label for="tab-13">Video</label>
-
-							       <div class="content">
-										<iframe width="100%" height="400px" src="https://www.youtube.com/embed/N0R2qcnrMDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
-									   <h3 class="tService formatTXTDetails">Miral el video del producto</h3><br><br><br>
-							       </div>
-							   </div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
- END PRODUCTO -->
-<!--*********  CONTENEDOR  de producto
-
-			<div class="ContProd">
-				<button class="accordion"><img class="imgProdIcon" src="image/products/motor_001.png"> BOMBA - Combustion Interna cmyk 2552</button>
-				<div class="panel">
-					<div class="ConBoxIMGProd">
-						<div class="boxIMGProd contenedorIMG">
-							<img class="img imgProd" src="image/products/motor_001.png"><br>
-						</div>
-						<div class="boxTXTProd">
-							<h2 class="tService formatTXTDetails">MOTOR DISEDEL</h2><br>
-							<p class="txtDetailsPro">
-								 <strong>MARCA</strong> DIesel Gasoline		<br>
-								Modelo: CY3434				<br>
-								FRABRICANTE: CMYK MOTORS 	<br>
-							</p><br>
-							<button class="button btnAqua" style="vertical-align:middle; margin-left: 30%;"><span>Cotizar</span></button>
-						</div>
-
-					</div>
-					<div class="ConBoxDetallesProd">
-
-						<div class="detallesContenedor">
-							<div class="tabs">
-
-							   <div class="tab">
-							       <input type="radio" id="tab-21" name="tab-group-2" checked>
-							       <label for="tab-21">Descripción</label>
-
-							       <div class="content">
-								    <div class="ContContenidoDescr">
-								 		<h3 class="tService formatTXTDetails">Descripcion del producto</h3><br>
-								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-							       </div>
-							   </div>
-
-							   <div class="tab">
-							       <input type="radio" id="tab-22" name="tab-group-2">
-							       <label for="tab-22">Detalles Técnicos</label>
-
-							       <div class="content">
-									    <h3 class="tService formatTXTDetails">Informacion Técnica</h3><br>
-								  		<p class="txtDetailsPro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									  	tempor incididunt ut labore et dolorenderit in voluptate velit esse
-									  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							       </div>
-							   </div>
-
-							    <div class="tab">
-							       <input type="radio" id="tab-23" name="tab-group-2">
-							       <label for="tab-23">Video</label>
-
-							       <div class="content">
-										<iframe width="100%" height="400px" src="https://www.youtube.com/embed/N0R2qcnrMDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
-									   <h3 class="tService formatTXTDetails">Miral el video del producto</h3><br><br><br>
-							       </div>
-							   </div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-					<div class="ContPag">
-						<div class="pagination">
-							  <a href="#">&laquo;</a>
-							  <a href="#" class="activePage">1</a>
-							  <a href="#">2</a>
-							  <a href="#">3</a>
-							  <a href="#">4</a>
-							  <a href="#">5</a>
-							  <a href="#">6</a>
-							  <a href="#">&raquo;</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
- END PRODUCTO -->
-
-<!--
-			<button class="accordion">Section 2</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-
-			<button class="accordion">Section 3</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
--->
-
-
 	</section>
 
 	<footer id="footer">
@@ -350,7 +176,7 @@ for (i = 0; i < acc.length; i++) {
 
 <!-- AJAX IMPLEMENTED -->
 <script>
-function showUser(str) {
+function showUser(str,fil) {
   if (str=="") {
     document.getElementById("txtHint").innerHTML="";
     return;
@@ -366,7 +192,7 @@ function showUser(str) {
       document.getElementById("txtHint").innerHTML=this.responseText;
     }
   }
-  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.open("GET","getuser.php?q="+str+"&p="+fil,true);
   xmlhttp.send();
 }
 </script>
