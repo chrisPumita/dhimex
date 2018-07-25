@@ -1161,13 +1161,10 @@ ul.breadcrumb li a:hover {
 .bloque{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
     position: relative;
-
     background-size: auto;
-
-    /* margin: 24px; */
     display: block;
+		margin-top: 0px !important;
 }
 
 .imgBloqueDer{
@@ -1859,18 +1856,13 @@ select::-ms-expand {
 .ac-container label {
   height: auto !important;
   line-height: 21px !important;
-  font-size: 12px !important;
-  /* font-family: 'Open Sans','Arial Narrow',Arial,sans-serif !important; */
+  font-size: 20px !important;
   padding: 5px 20px;
   position: relative;
-  /* z-index: 20; */
   display: block;
-  /* height: 30px; */
   cursor: pointer;
   color: #777;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-  /* line-height: 33px; */
-  /* font-size: 19px; */
   background: #eee;
   background: -moz-linear-gradient(top,#fff 1%,#eaeaea 100%);
   background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#fff),color-stop(100%,#eaeaea));
@@ -1880,7 +1872,6 @@ select::-ms-expand {
   background: linear-gradient(top,#fff 1%,#eaeaea 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#eaeaea',GradientType=0 );
 
-  font-size: 15px;
   height: 30px;
   line-height: 20px;
   border-bottom: var(--aqua) solid 1px;
@@ -1913,6 +1904,7 @@ select::-ms-expand {
   height: 24px;
   right: 13px;
   top: 7px;
+    background: transparent url(../image/down.png) no-repeat center center;
 }
 
 

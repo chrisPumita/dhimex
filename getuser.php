@@ -8,7 +8,7 @@
   //echo " Valor Q " .$q;
   $con = mysqli_connect('localhost','root','','dhimex_db');
   if (!$con) {
-      die('Could not connect: ' . mysqli_error($con));
+      die('No se ha podido conectar a la Base de Datos de DHIMEX: ' . mysqli_error($con));
   }
 
   $sql="
@@ -42,6 +42,19 @@ else {
   mysqli_select_db($con,"ajax_demo");
   $result = mysqli_query($con,$sql);
   $cont = 1;
+
+  //Determinar el numero de registros a mostrar
+  $filas=3;
+
+  //Evaluar el nPag
+  //Si la variable nPag esta vacia la pagina inicial serà 0
+  //caso contrario se captira la pagina seleccionada por el usuario
+  if (!isset($_GET["nPag"]))$nPag = 0; else $nPag = $_GET["nPag"];
+  //La variable incio asigna el valor para cada juego de registros
+  //1..3 Inicio = 0
+  //4..7 Inicio = 3
+  $inicio = $nPag*$filas;
+
   echo '<section class="ac-container">';
   //echo $sql;
   while($row = mysqli_fetch_array($result)) {
@@ -121,14 +134,37 @@ else {
   $cont++;
   //TERMINA CILOO DE LLENADO DE ACORDION
   }
+$reg = $cont;
+  //UNa ves obtenido el numero de elementos y asignandos,
+  //determinamos el total de paginaS
+  //Total de registros / totalFilas
+$totalPag = floor($cont/$filas);
+
+if (($cont%$filas)>0) $totalPag++;
+
+//Mostramos el paginado
+echo "PAG NO ".($nPag+1)." de ".$totalPag."<br>";
+for ($i=0; $i < $totalPag; $i++) {
+  if ($i==$nPag) {
+    echo "[".($i+1)."]";
+  } else {
+    echo '
+      <a href = "  '.$_SERVER["PHP_SELF"].'?nPag='.$i.' ">['.($i+1).']</a>
+    ';
+  //  echo '<a href="'.$_SERVER['PHP_SELF'].'?nPag='.$i.'>['.($i+1).'] </a>';
+  }
+}
+
+
   //En caso de que no encontremos productos
-  if ($cont <=1) {
+  if ($reg <=1) {
     echo "<div ><b>Lo sentimos, aun no tenemos productos disponibles en esta categoria, <br>
 
     intente con otra.</b></div>";
   }
   else {
     echo '<div class ="founNumber"><b>Se encontraron '.($cont-1).' productos</b></div>';
+
   }
   echo '</section>';
   mysqli_close($con);
