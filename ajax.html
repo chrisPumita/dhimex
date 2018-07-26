@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html >
 <style>
@@ -15,7 +16,7 @@ table tr:nth-child(even) {
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
- 
+
 <div ng-app="myApp" ng-controller="customersCtrl">
 <button ng-click="count = count + 1" ng-init="count=0">OK</button>
 <p>The button has been clicked {{count}} times.</p>
@@ -26,9 +27,9 @@ table tr:nth-child(even) {
     <td>{{ x.Country }}</td>
   </tr>
 </table>
- 
+
 </div>
- 
+
 <script>
   function ver(typeSQL) {
     var app = angular.module('myApp', []);
@@ -39,6 +40,6 @@ table tr:nth-child(even) {
     // body...
   }
 </script>
- 
+
 </body>
 </html>

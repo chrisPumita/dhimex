@@ -46,35 +46,34 @@
 								<select name="users" onchange="showUser(this.value,1)">
 									<option value="" selected>MARCAS</option>
 									<option value="0">Ver Todas</option>
-									<option value="1">CMYK MOTORS</option>
-									<option value="2">RGB HIDRAULICA</option>
+									<?php require 'php/conecta.php';
+										$sql = "SELECT `id_marca`,`name_mar` FROM `marca` ORDER BY `id_marca` ASC ";
+										$result = mysqli_query($con,$sql);
+										while($row = mysqli_fetch_array($result)) {
+											echo '<option value="'.$row['id_marca'].'">'.$row['name_mar'].'</option>';
+										}
+									 ?>
 								</select>
 							</form>
 						</div>
 				</div>
-				<div class="dropdown noBorder">
-							<div class="caja">
-								<form>
-									<select name="users" onchange="showUser(this.value,2)">
-										<option value="" selected>CATEGORÍAS</option>
-										<option value="0">Ver Todas</option>
-										<option value="1">Accesorios Hidráulicos </option>
-										<option value="2">Bombas</option>
-										<option value="3">Calentadores de agua</option>
-										<option value="4">Incendio</option>
-										<option value="5">Intercambiadores de calor</option>
-										<option value="6">Motores</option>
-										<option value="7">Refacciones</option>
-										<option value="8">Sistemas Hidráulicos</option>
-										<option value="9">Software</option>
-										<option value="10">Tableros de Fuerza y Control</option>
-										<option value="11">Tanques</option>
-										<option value="12">Tratamiento de Agua</option>
-									</select>
-								</form>
-							</div>
-				</div>
-
+					<div class="dropdown noBorder">
+						<div class="caja">
+							<form>
+								<select name="users" onchange="showUser(this.value,2)">
+									<option value="" selected>CATEGORÍAS</option>
+									<option value="0">Ver Todas</option>
+									<?php
+										$sql = "SELECT `id_cat`,`name_cat` FROM `categoria` ORDER BY `id_cat` ASC";
+										$result = mysqli_query($con,$sql);
+										while($row = mysqli_fetch_array($result)) {
+											echo '<option value="'.$row['id_cat'].'">'.$row['name_cat'].'</option>';
+										}
+										?>
+								</select>
+							</form>
+						</div>
+					</div>
 			</div>
 			<div class="ContFiltros">
 		  		<p>MOSTRAR</p>
@@ -155,6 +154,7 @@
 		</div>
 	</footer>
 <!---->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;

@@ -1,23 +1,19 @@
 <?php
   header("Content-Type: text/html;charset=utf-8");
+
   //Utiliza q para saber que se filtro por obtener el ID del filtro
   $q = intval($_GET['q']);
   //se utiliza p para saber que tipo de filtro se realizara, ya sea categoria o marca, esto modificarà el SQL
   $p = intval($_GET['p']);
   //echo "FILTRO P ".$p;
   //echo " Valor Q " .$q;
-  $con = mysqli_connect('localhost','root','','dhimex_db');
-  if (!$con) {
-      die('No se ha podido conectar a la Base de Datos de DHIMEX: ' . mysqli_error($con));
-  }
-
+	require 'php/conecta.php';
   $sql="
   SELECT producto.id,producto.nombre, marca.name_mar as marca,producto.modelo,producto.descripcion,
   producto.detalles,producto.url_video,producto.url_img,producto.stars, categoria.name_cat AS cat
   FROM producto, categoria, marca WHERE producto.status = 1
   AND categoria.id_cat = producto.id_cat AND producto.id_marca = marca.id_marca
   ";
-
 if ($p =='1') {
   // P vale 1 por lo tanto es fultro de marca
   if ($q != '0') {
@@ -36,25 +32,10 @@ else {
     $sql = $sql."".$sqlAdd;
   }
 }
-
-
   $con->set_charset("utf8");
   mysqli_select_db($con,"ajax_demo");
   $result = mysqli_query($con,$sql);
   $cont = 1;
-
-  //Determinar el numero de registros a mostrar
-  $filas=3;
-
-  //Evaluar el nPag
-  //Si la variable nPag esta vacia la pagina inicial serà 0
-  //caso contrario se captira la pagina seleccionada por el usuario
-  if (!isset($_GET["nPag"]))$nPag = 0; else $nPag = $_GET["nPag"];
-  //La variable incio asigna el valor para cada juego de registros
-  //1..3 Inicio = 0
-  //4..7 Inicio = 3
-  $inicio = $nPag*$filas;
-
   echo '<section class="ac-container">';
   //echo $sql;
   while($row = mysqli_fetch_array($result)) {
@@ -63,7 +44,6 @@ else {
     if (empty( $video)) {
       //EN caso de no tener video
       $video = "https://www.youtube.com/embed/5FGzcUIjTe4";
-
     }
   //SI CONTIENE VIDEO, POR LO TANTO CREAMOS EL TAB QUE LO MIESTRA
     else {
@@ -116,7 +96,6 @@ else {
     							   <div class="tab">
     							       <input type="radio" id="tab-'. $cont .'2" name="tab-group-'. $cont .'">
     							       <label for="tab-'. $cont .'2">Detalles Técnicos</label>
-
     							       <div class="content">
     									    <h3 class="tService formatTXTDetails">Informacion Técnica</h3><br>
     								  		<p class="txtDetailsPro">'.$row['detalles'].'</p>
@@ -124,7 +103,6 @@ else {
     							   </div>
                      '.$tab.'
     							</div>
-
     						</div>
     					</div>
     				</div>
@@ -134,37 +112,13 @@ else {
   $cont++;
   //TERMINA CILOO DE LLENADO DE ACORDION
   }
-$reg = $cont;
-  //UNa ves obtenido el numero de elementos y asignandos,
-  //determinamos el total de paginaS
-  //Total de registros / totalFilas
-$totalPag = floor($cont/$filas);
-
-if (($cont%$filas)>0) $totalPag++;
-
-//Mostramos el paginado
-echo "PAG NO ".($nPag+1)." de ".$totalPag."<br>";
-for ($i=0; $i < $totalPag; $i++) {
-  if ($i==$nPag) {
-    echo "[".($i+1)."]";
-  } else {
-    echo '
-      <a href = "  '.$_SERVER["PHP_SELF"].'?nPag='.$i.' ">['.($i+1).']</a>
-    ';
-  //  echo '<a href="'.$_SERVER['PHP_SELF'].'?nPag='.$i.'>['.($i+1).'] </a>';
-  }
-}
-
-
   //En caso de que no encontremos productos
-  if ($reg <=1) {
+  if ($cont <=1) {
     echo "<div ><b>Lo sentimos, aun no tenemos productos disponibles en esta categoria, <br>
-
     intente con otra.</b></div>";
   }
   else {
     echo '<div class ="founNumber"><b>Se encontraron '.($cont-1).' productos</b></div>';
-
   }
   echo '</section>';
   mysqli_close($con);
