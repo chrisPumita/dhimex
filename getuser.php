@@ -23,7 +23,7 @@ if ($p =='1') {
     $sql = $sql."".$sqlAdd;
   }
 }
-else {
+elseif ($p =='2'){
   // P vale 2 por lo tanto es filtro de categoria
   if ($q != '0') {
     // Quiere decir que se envio un ID con marca seleccionada
@@ -114,8 +114,10 @@ else {
   }
   //En caso de que no encontremos productos
   if ($cont <=1) {
-    echo "<div ><b>Lo sentimos, aun no tenemos productos disponibles en esta categoria, <br>
-    intente con otra.</b></div>";
+    echo "<div class='contProductoAJAX'>
+    <img class='imgAjax'  src='image/no-result.png'>
+    <br><b class='txtAjaxCont'>Lo sentimos, aun no tenemos productos disponibles en esta categoria,
+    intente con otra.</b> </div>";
   }
   else {
     echo '<div class ="founNumber"><b>Se encontraron '.($cont-1).' productos</b></div>';

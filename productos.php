@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Productos - DHIMEX</title>
 	<link rel="stylesheet" href="style/style.css">
+		<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
@@ -75,6 +76,7 @@
 						</div>
 					</div>
 			</div>
+			<!--
 			<div class="ContFiltros">
 		  		<p>MOSTRAR</p>
 				<div class="caja">
@@ -87,10 +89,11 @@
 						</select>
 		  		</div>
 			</div>
+		-->
 		</div>
 
 
-		<div id="CatalogoProductos" class="">
+		<div id="CatalogoProductos">
 			<h2 class="productoMje">MOSTRANDO PRODUCTOS</h2><br>
 
 			<!--*********  AJAX CONT **********-->
@@ -154,7 +157,6 @@
 		</div>
 	</footer>
 <!---->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;

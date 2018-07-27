@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CURRICULUM - DHIMEX</title>
 	<link rel="stylesheet" href="style/style.css">
+		<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
@@ -14,7 +15,7 @@
 				<div class="containerLogo">
 				  <a href="index.html">
 					<img class="logoPage" src="image/logo-dhimex.png" alt="Logo Dhimex">
-				  </a>	
+				  </a>
 				</div>
 				<div class="topnav" id="myTopnav">
 				  <a href="about.html">NOSOTROS</a>
@@ -66,11 +67,11 @@
 						<a href="aviso-de-privacidad.html">AVISO DE PRIVACIDAD</a>
 				</div>
 			</div>
-			
+
 			<div class="main">
 				<div class="filtrerCursos">
 					<div id="myBtnFilContainer">
-					
+
 					  <button class="fbtn txtMenuCurso active" onclick="filterSelection('all')">
 					  	VER TODO</button>
 					  <button class="fbtn txtMenuCurso" onclick="filterSelection('tecnico')">
@@ -131,7 +132,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -177,7 +178,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -223,7 +224,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -269,7 +270,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -315,7 +316,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -361,7 +362,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -408,7 +409,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -454,7 +455,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -500,7 +501,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -547,7 +548,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -593,7 +594,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -639,7 +640,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -686,7 +687,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -732,7 +733,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -778,7 +779,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -824,7 +825,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -870,7 +871,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -916,7 +917,7 @@
 								<span class="txtDirCurso">
 									Calle Esteban Loera 428, Reforma. 44890 Guadalajara Jalisco.
 								</span>
-								
+
 							</div>
 						</p>
 				  </div>
@@ -929,13 +930,13 @@
 
 			</div>
 
-			</div>    
+			</div>
 		</div>
 
 
-		
+
 		<div class="tbody">
-			
+
 		</div>
 
 	</section>
@@ -982,7 +983,7 @@
 						    <button class="buttonPie" style="vertical-align:middle"><span>Enviar </span></button>
 						  </div>
 
-					</form>	
+					</form>
 				</div>
 			</div>
 			<div class="ContCopy">
@@ -991,7 +992,7 @@
 					<a href="https://twitter.com/DhimexDF" title="Twitter de DHIMEX" target="_blank"><img class="imgRedes" src="icons/twitter.png"></a>
 					<a href="https://www.youtube.com/user/DhimexVideos/" title="Canal de Youtube de DHIMEX" target="_blank"><img class="imgRedes" src="icons/youtube.png"></a>
 				</div>
-				2018.© DHIMEX CIudad de México S.A de C.V. Derechos Reservados 
+				2018.© DHIMEX CIudad de México S.A de C.V. Derechos Reservados
 			</div>
 		</div>
 	</footer>
@@ -1023,7 +1024,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");

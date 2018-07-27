@@ -1204,7 +1204,7 @@ ul.breadcrumb li a:hover {
 }
 
 .ContFiltros{
-    width: 50%;
+    width: 60%;
     height: auto;
     display: flex;
     justify-content: flex-end;
@@ -1960,4 +1960,20 @@ select::-ms-expand {
 	padding: 10px;
 	text-align: center;
 	color: var(--grey1);
+}
+
+.contProductoAJAX{
+	width: 100%;
+	height: 100%;
+	display: flex
+}
+
+.txtAjaxCont{
+	padding: 3%;
+	font-size: 2em;
+}
+
+.imgAjax{
+	width: 200px;
+	height: 100%;
 }
