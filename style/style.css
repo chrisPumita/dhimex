@@ -264,6 +264,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-ms-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	transform: skew(-20deg);
 }
 
 .button span {
@@ -271,6 +276,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
   display: inline-block;
   position: relative;
   transition: 0.5s;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-ms-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	transform: skew(20deg);
+}
+
+.buttonPie span{
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-ms-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	transform: skew(20deg);
 }
 
 .button span:after {
@@ -499,6 +517,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+		-ms-transform: skew(-20deg);
+		-o-transform: skew(-20deg);
+		transform: skew(-20deg);
 }
 
 .buttonPie:hover{
@@ -526,6 +549,11 @@ li, a {
     padding-right: 10px;
     outline: none;
     margin: 5px;
+		-webkit-transform: skew(-20deg);
+		-moz-transform: skew(-20deg);
+		-ms-transform: skew(-20deg);
+		-o-transform: skew(-20deg);
+		transform: skew(-20deg);
 }
 
 .input-field:focus {
@@ -1819,7 +1847,6 @@ select::-ms-expand {
 .btnCurso{
     display: inline-block;
     border-radius: 0px;
-
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -1829,6 +1856,11 @@ select::-ms-expand {
     height: 100%;
     transition: all 0.5s;
     margin: 0px;
+		-webkit-transform: skew(0deg);
+		-moz-transform: skew(0deg);
+		-ms-transform: skew(0deg);
+		-o-transform: skew(0deg);
+		transform: skew(0deg);
 }
 .imgT {
     width: 25px;
@@ -2116,7 +2148,7 @@ select::-ms-expand {
     }
 
     .imgCuenta {
-        width: 15%;        
+        width: 15%;
         margin: 0% 1% 0% 1%;
     }
 
@@ -2134,7 +2166,7 @@ select::-ms-expand {
             margin-left: 5%;
             padding-top: 1%;
         }
-        
+
 
     .ContProd {
         width: 94%;
@@ -2189,4 +2221,3 @@ select::-ms-expand {
 @media (min-width:300px) and (max-width:700px) {
 
 }
-
