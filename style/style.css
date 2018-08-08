@@ -23,7 +23,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 	display: contents;
 	overflow-x: hidden;
-    background-color: var(--whitteSolid) !important;
+    background-color: var(--whitteSolid);
 }
 
 * {
@@ -114,6 +114,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     justify-content: center;
     align-items: center;
     margin-top: 15%;
+		z-index: 1;
 }
 .cont2Link{
     width: 90%;
@@ -2100,7 +2101,7 @@ select::-ms-expand {
     }
 }
 
-@media (min-width:861px) and (max-width:1024px) and (orientation: portrait) {
+@media  (min-width:470px) and (max-width:860px) {
     .header {
         height: 65%;
     }
@@ -2123,16 +2124,24 @@ select::-ms-expand {
     }
 
     .ContLinksMenu {
-        width: 30%;
-        height: 60%;
-        margin-top: 26%;
-        margin-left: 15%;
+			width: 30%;
+	    height: auto;
+	    margin-top: 10%;
+	    margin-left: 5%;
     }
 
     .cont2Link {
         margin-bottom: 25px;
         display: block;
     }
+		.ContBannerServ {
+    background: url(../image/banner2Services.jpg) center no-repeat;
+    background-size: cover;
+}
+.ContBanner {
+    background: url(../image/banner1Machines.jpg) center no-repeat;
+    background-size: cover;
+}
 
     #contenido {
         margin-top: -35vh;
@@ -2155,13 +2164,22 @@ select::-ms-expand {
     .ContBelive {
         height: 900px;
     }
-    .TittleBelive {
-        position: absolute;
-        top: 15%;
-    }
+		.TittleBelive {
+		    position: relative;
+		    top: 15%;
+		    width: 100%;
+		    height: 450px;
+		    position: absolute;
+		    right: 0px;
+		}
+		.Panel1, .Panel2 {
+		    right: 100%;
+		    width: 83%;
+		    height: 300px;
+		}
 
     .containerLogo {
-            width: 20%;
+    				width: 10%;
             height: 80%;
             margin-left: 5%;
             padding-top: 1%;
@@ -2173,11 +2191,11 @@ select::-ms-expand {
         margin-left: 3%;
         margin-right: 3%;
     }
-    .topnav a {
-        margin-top: 41px;
-        padding: 10px 13px;
-        font-size: 1.3em;
-    }
+		.topnav a {
+	    margin-top: 49px;
+  		padding: 14px 10px;
+	    font-size: .9em;
+		}
 
     .sidenav {
         width: 25%;
@@ -2214,10 +2232,271 @@ select::-ms-expand {
         display: block;
     }
 }
+/*Portatil de forma vertical */
+@media screen and (max-width:669px), and (orientation: portrait){
+	.ContMenu {
+    display: none;
+	}
+	.MenuSpan{
+		display: grid;
+	}
+	.ContX {
+	    width: 5%;
+	}
+	.ContLinksMenu {
+	    position: absolute;
+	    width: 60%;
+	    height: 100%;
+	    /* margin-top: 20%; */
+	    z-index: 1;
+	    right: 0;
+	}
+	.cont2Link {
+	    display: block;
+	}
+	.MenuSpan {
+	    font-size: 2em;
+	    cursor: pointer;
+	    display: flex;
+	    margin-left: 5%;
+	    margin-top: 5%;
+	    color: var(--aqua);
+			z-index: 2;
+	}
+	.ContAboutText {
+	    width: 100%;
+	}
+	.imgAbout {
+	    margin-left: 25px;
+	    margin-right: 0px;
+	    width: 60px;
+	    height: 60px;
+	}
+	.ContTiitle {
+	    width: 100%;
+	    position: absolute;
+	    top: 30px;
+	}
+.txtAbout {
+    text-align: center;
+    font-size: 2em;
+}
+.ContBanner {
+    background: url(../image/banner1Machines.jpg) center no-repeat;
+    background-size: cover;
+		margin-top: 50px;
+margin-bottom: 50px;
+}
+.contMyBanner {
+    display: block;
+		    height: auto;
+}
+.BannerTxt {
+    width: 100%;
+}
+.txtBannerInfo {
+    font-size: 2em;
+}
+.BannerBoton {
+    width: 100%;
+}
+.ContTiitleProductos {
+    width: 100%;
+}
+.contHijoServ {
+    -moz-box-sizing: border-box;
+    width: 98%;
+    height: 260px;
+    border: 3px solid var(--google);
+}
+.imgServices {
+    margin: 0px;
+    width: 70px;
+    height: 70px;
+}
+.ContBannerServ {
+    background: url(../image/banner2Services.jpg) center no-repeat;
+    background-size: cover;
+}
 
-/* ++++++++++++++++++++++++++++++ RESPONSIVE ++++++++++++
-    *******************     PARA IPADS / TABLETAS      */
-    /*TABLET HORIZONTAL*/
-@media (min-width:300px) and (max-width:700px) {
+	.ContQuienes {
+	    display: block;
+	}
+	.ContEnlaces {
+	    height: 100%;
+	    display: grid;
+	    position: relative;
+	}
+	.ContLinksPie {
+	    width: 100%;
+	}
+	.news {
+	    margin-left: 5%;
+		}
+		.ContCopy {
+	    width: 100%;
+	    height: 300px;
+	    display: block;
+	}
+	.contRedesFooter {
+	    position: relative;
+	    right: 0px;
+	    text-align: center;
+	    margin: 25px;
+	}
+	.ContCopy {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+	#contenido {
+	    background-color: var(--whitteSolid) !important;
+			background: red;
+	    margin-top: -20vh;
+	}
+
+	.tTittle {
+		font-size: 1.5em;
+    text-align: center;
+	}
+	.ContMisVis {
+	    height: auto;
+    display: grid;
+	}
+	.mision, .vision {
+	    width: 100%;
+	}
+	.tittleBold {
+	    padding-right: 0px;
+	    text-align: center;
+	}
+	.TittleBelive {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+.tTxtBelive {
+    text-align: center;
+    padding-right: 0px;
+    margin-top: 20px;
+}
+.Belive {
+    margin: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.ContVAC {
+    display: block;
+}
+.ContVideo {
+    width: 100%;
+}
+.ContAliCon {
+    width: 100%;
+    height: auto;
+}
+.triangulo-top,.triangulo-botton {
+    display: none;
+}
+
+.Panel1, .Panel2 {
+    right: 0px;
+    width: 100%;
+    height: auto;
+}
+.txtAli, .txtCon {
+    padding: 10%;
+    width: 80%;
+}
+
+#myBtnFilContainer {
+    display: grid;
+}
+.container {
+    width: 90%;
+    margin-right: 0px;
+    margin-top: 20px;
+}
+.filterDiv {
+    width: 98%;
+}
+
+.ContFiltros {
+    width: 100%;
+    justify-content: center;
+}
+.ContProd {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ac-container label {
+    display: grid;
+	}
+
+	.panel {
+	    overflow-x: scroll;
+	    position: relative;
+	    width: 200%;
+	}
+
+	.ac-container input:checked ~ article.ac-small {
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.ContService {
+    display: block;
+}
+.IMGServ, .ContTxtServ2 {
+    width: 100%;
+}
+.tService {
+    font-size: 2em;
+}
+.txtCV {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+		display: block;
+}
+.pnl{
+	width: 100%;
+	height: 100%;
+}
+.txtTCV {
+    font-size: 1em;
+    align-items: center;
+}
+.imgGrafica {
+    width: 100%;
+    height: 100%;
+}
+.sidenav {
+    display: none;
+}
+
+.contTContacto {
+    width: 100%;
+    height: auto;
+		display: block;
+}
 
 }
+
+
+/*
+.MenuSpan{
+	z-index: -1;
+}
+
+*/

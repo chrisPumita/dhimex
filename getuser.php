@@ -60,7 +60,7 @@ elseif ($p =='2'){
     }
   echo '
   <div class="contAcordion">
-    <input id="ac-'. $cont .'" name="accordion-'. $cont .'" type="radio">
+    <input id="ac-'. $cont .'" name="accordion-1" type="radio">
     <label for="ac-'. $cont .'">
       <img class="imgProdIcon" src="image/products/'.$row['url_img'].'"> '.$row['cat'].' - '.$row['nombre'].'  '.$row['modelo'].'
     </label>
