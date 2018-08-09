@@ -10,8 +10,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<div id="mySidenav1" class="sidenav1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="Contlogo">
+			<img class="logoHeader" src="image/logo-dhimex.png" alt="Logo Dhimex">
+		</div>
+		<a href="about.html">NOSOTROS</a>
+		<a href="productos.php">PRODUCTOS</a>
+		<a href="servicios.html">SERVICIOS</a>
+		<a href="capacitacion.php">CAPACITACIÓN</a>
+		<a href="contacto.html">CONTACTO</a>
+	</div>
+	<div id="main1"  ></div>
 		<header id="headerWeb" class="">
 		<div class="ContainerHeader">
+			<span class="MenuSpan" onclick="openNav()">&#9776;</span>
 				<div class="containerLogo">
 				  <a href="index.html">
 					<img class="logoPage" src="image/logo-dhimex.png" alt="Logo Dhimex">
@@ -136,14 +149,12 @@
 					  <li>Bolsa de Trabajo</li>
 					  <li>Noticias</li>
 					</ul>
-
 					<h3 class="titlePlie">Suscribete A Nuestro Newsletter </h3>
 					<form class="news" action="index_submit" method="get" accept-charset="utf-8">
 						  <div class="input-container">
 						    <input class="input-field" type="text" placeholder="Escriba su correo electrónico" name="usrnm">
 						    <button class="buttonPie" style="vertical-align:middle"><span class="txtBTN">Enviar </span></button>
 						  </div>
-
 					</form>
 				</div>
 			</div>
@@ -157,48 +168,7 @@
 			</div>
 		</div>
 	</footer>
-<!---->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("activeAcordion");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      //panel.style.maxHeight = "100%";
-    }
-  });
-}
-</script>
-
-<!-- AJAX IMPLEMENTED -->
-<script>
-function showUser(str,fil) {
-  if (str=="") {
-    document.getElementById("txtHint").innerHTML="";
-    return;
-  }
-  if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp=new XMLHttpRequest();
-  } else { // code for IE6, IE5
-    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("txtHint").innerHTML=this.responseText;
-    }
-  }
-  xmlhttp.open("GET","getuser.php?q="+str+"&p="+fil,true);
-  xmlhttp.send();
-}
-</script>
-
+	<script src="js/effects.js"></script>
 </body>
 </html>

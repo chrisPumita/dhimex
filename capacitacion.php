@@ -11,8 +11,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div id="mySidenav1" class="sidenav1">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="Contlogo">
+		<img class="logoHeader" src="image/logo-dhimex.png" alt="Logo Dhimex">
+	</div>
+	<a href="about.html">NOSOTROS</a>
+	<a href="productos.php">PRODUCTOS</a>
+	<a href="servicios.html">SERVICIOS</a>
+	<a href="capacitacion.php">CAPACITACIÓN</a>
+	<a href="contacto.html">CONTACTO</a>
+</div>
+<div id="main1"  ></div>
 		<header id="headerWeb" class="">
-		<div class="ContainerHeader">
+			<div class="ContainerHeader">
+				<span class="MenuSpan" onclick="openNav()">&#9776;</span>
 				<div class="containerLogo">
 				  <a href="index.html">
 					<img class="logoPage" src="image/logo-dhimex.png" alt="Logo Dhimex">
@@ -26,7 +39,7 @@
 				  <a href="contacto.html">CONTACTO</a>
 				  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 				</div>
-		</div>
+			</div>
 		<div class="containerNav">
 			<ul class="breadcrumb">
 			  	<li><a href="index.html">Inicio</a></li>
@@ -999,50 +1012,6 @@
 		</div>
 	</footer>
 
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "showFil");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showFil");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainerF = document.getElementById("myBtnFilContainer");
-var btns = btnContainerF.getElementsByClassName("fbtn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var currentF = document.getElementsByClassName("active");
-    currentF[0].className = currentF[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-
+<script src="js/effects.js"></script>
 </body>
 </html>

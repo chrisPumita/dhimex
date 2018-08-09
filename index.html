@@ -9,73 +9,19 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<style>
-
-
-	.sidenav1 {
-		height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: #000000e8;
-    overflow-y: hidden;
-    transition: 0.5s;
-    padding-top: 20%;
-    text-align: center;
-	}
-
-	.sidenav1 a {
-	    padding: 0px 0px 10% 0px;
-	    text-decoration: none;
-	    font-size: 2em;
-	    color: var(--aqua);
-	    display: block;
-	    transition: 0.3s;
-	}
-
-	.sidenav1 a:hover {
-	    color: #f1f1f1;
-	}
-
-	.sidenav1 .closebtn {
-	    position: absolute;
-	    top: 0;
-	    right: 20px;
-	    font-size: 5em;
-	    margin-left: 50px;
-	}
-
-	#main1 {
-	    transition: margin-left .5s;
-	}
-
-
-	.MenuBar{
-		font-size: 5em;
-		cursor: pointer;
-		position: fixed;
-		display: inline;
-		z-index: 4;
-	}
-	</style>
-
-
-
 </head>
 <body>
 	<div id="mySidenav1" class="sidenav1">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="Contlogo">
+		<img class="logoHeader" src="image/logo-dhimex.png" alt="Logo Dhimex">
+	</div>
   <a href="about.html">NOSOTROS</a>
   <a href="productos.php">PRODUCTOS</a>
   <a href="servicios.html">SERVICIOS</a>
   <a href="capacitacion.php">CAPACITACIÓN</a>
   <a href="contacto.html">CONTACTO</a>
 </div>
-
-
-
 	<header id="header">
 		<div id="main1"  >
 
@@ -330,19 +276,7 @@
 		</div>
 	</footer>
 
-	<script>
-	function openNav() {
-	    document.getElementById("mySidenav1").style.width = "300px";
-	    document.getElementById("main1").style.marginLeft = "300px";
-	    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-	}
-
-	function closeNav() {
-	    document.getElementById("mySidenav1").style.width = "0";
-	    document.getElementById("main1").style.marginLeft= "0";
-	    document.body.style.backgroundColor = "white";
-	}
-	</script>
+<script src="js/effects.js"></script>
 
 </body>
 </html>
