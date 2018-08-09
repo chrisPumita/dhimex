@@ -2585,7 +2585,7 @@ margin-bottom: 50px;
 	    font-size: 3em;
 	}
 	.sidenav1 {
-	    padding-top: 0%;
+	    padding-top: 10%;
 	}
 	.logoHeader {
 	    margin: 5%;
@@ -2652,12 +2652,48 @@ margin-bottom: 50px;
 .ContMap, .contFormCampo {
     display: flex;
 }
-
+	.header {
+	    height: 100%;
+	}
+	#contenido {
+	    background-color: var(--whitteSolid) !important;
+	    margin-top: 0vh;
+	}
+	.cont2Link {
+	    margin-bottom: 0px;
+	    display: flex;
+	}
+	.contLink {
+    margin: 5px;
+    font-size: 12px;
+}
+.xDhimex {
+    right: 30%;
+}
+.contHijoServ {
+    width: 95%;
 }
 
-/*
-.MenuSpan{
-	z-index: -1;
+.PentaDhimex {
+    right: 75%;
+}
+.Contlogo, .gpoBotones {
+    display: none;
+}
+.ContMenu {
+    display: flex;
+}
+.contHijoServ {
+    width: 44%;
+    height: 200px;
+}
+.imgServices {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+.tituloBanner {
+    margin: 0px;
 }
 
-*/
+}
