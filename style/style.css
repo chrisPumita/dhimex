@@ -2666,34 +2666,86 @@ margin-bottom: 50px;
 	.contLink {
     margin: 5px;
     font-size: 12px;
-}
-.xDhimex {
-    right: 30%;
-}
-.contHijoServ {
-    width: 95%;
+	}
+	.xDhimex {
+	    right: 30%;
+	}
+	.contHijoServ {
+	    width: 95%;
+	}
+
+	.PentaDhimex {
+	    right: 75%;
+	}
+	.Contlogo, .gpoBotones {
+	    display: none;
+	}
+	.ContMenu {
+	    display: flex;
+	}
+	.contHijoServ {
+	    width: 44%;
+	    height: 200px;
+	}
+	.imgServices {
+	    margin: 10px;
+	    width: 30px;
+	    height: 30px;
+	}
+	.tituloBanner {
+	    margin: 0px;
+	}
+
 }
 
-.PentaDhimex {
-    right: 75%;
-}
-.Contlogo, .gpoBotones {
-    display: none;
-}
-.ContMenu {
-    display: flex;
-}
-.contHijoServ {
-    width: 44%;
-    height: 200px;
-}
-.imgServices {
-    margin: 10px;
-    width: 30px;
-    height: 30px;
-}
-.tituloBanner {
-    margin: 0px;
+
+.PVSystem{
+	width: 80%;
 }
 
+.IMGSystem{
+	width: 20%;
+}
+
+.txtSystem{
+	width: auto;
+	height: auto;
+	position: relative;
+	padding-left: 2%;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+}
+.caja0{
+	width: 100%;
+	display: flex;
+	background-color: var(--grey1);
+}
+
+.caja1{
+	width: 48%;
+	margin: 1%;
+	background-color: var(--grey2);
+}
+.caja2{
+	width: 46%;
+	margin: 2%;
+	background-color: var(--grey2);
+}
+.caja4{
+	width: 100%;
+}
+.userB{
+	display: flex;
+	width: 65%;
+	margin-left: 25%;
+}
+
+.btnCotizador{
+	background-color: var(--aqua);
+	border-color: var(--whittesolid);
+}
+.form-control{
+	width: 80% !important;
+margin-left: 10% !important;
 }
