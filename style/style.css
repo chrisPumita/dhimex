@@ -138,6 +138,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 	vertical-align: middle;
 }
 
+
 .Contlogo{
 	width: 70%;
 	height: 25%;
@@ -2733,7 +2734,45 @@ margin-bottom: 50px;
 	background-color: var(--grey2);
 }
 .caja4{
+	width: 98%;
+}
+
+.cotizaForm{
 	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.textCotiza{
+	position: relative;
+	width: 65%;
+	height: 20px;
+	padding: 13px;
+	/* float: right; */
+	/* text-align: center; */
+	/* margin-right: 10%; */
+	margin-left: 2%;
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.cotiza1A{
+	    width: 55%;
+}
+.DespCotiza{
+	position: relative;
+	width: 55%;
+	height: 20px;
+	padding: 13px;
+	/* float: right; */
+	/* text-align: center; */
+	/* margin-right: 10%; */
+	margin-left: 2%;
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .userB{
 	display: flex;
