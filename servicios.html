@@ -242,7 +242,6 @@ li.fancyTab.active a {
 }
 </style>
 
-
 </head>
 <body>
 	<div id="mySidenav1" class="sidenav1">
@@ -419,41 +418,82 @@ li.fancyTab.active a {
 																		<div class="cotizaForm">
 																			<label for="asunto"><b>Delegación/Municipio:</b></label>
 																			<select class="DespCotiza" name="municipios">
-																				<option value="0">Seleciione Delegacion/Municipio</option>
-																				<option value="2">Azcapotzalco</option>
-																				<option value="3">Coyoacan</option>
-																				<option value="4">Cuajimalpa de Morelos</option>
-																				<option value="5">Gustavo A. Madero</option>
-																				<option value="6">Iztacalco</option>
-																				<option value="7">Iztapalapa</option>
-																				<option value="8">La Magdalena Contreras</option>
-																				<option value="9">Milpa Alta</option>
-																				<option value="10">Alvaro Obregon</option>
-																				<option value="11">Tlahuac</option>
-																				<option value="12">Tlalpan</option>
-																				<option value="13">Xochimilco</option>
-																				<option value="14">Benito Juarez</option>
-																				<option value="15">Cuauhtemoc</option>
-																				<option value="16">Miguel Hidalgo</option>
-																				<option value="17">Venustiano Carranza</option>
-																				<option value="18">Tlalnepantla</option>
-																				<option value="19">Naucalpan</option>
-																				<option value="20">Tultitlán</option>
-																				<option value="21">Huixquilucan</option>
-																				<option value="22">Nezahualcoyotl</option>
+																				<optgroup label="CDMX">
+																					<option value="0">Delegacion/Municipio</option>
+																					<option value="2">Azcapotzalco</option>
+																					<option value="3">Coyoacan</option>
+																					<option value="4">Cuajimalpa de Morelos</option>
+																					<option value="5">Gustavo A. Madero</option>
+																					<option value="6">Iztacalco</option>
+																					<option value="7">Iztapalapa</option>
+																					<option value="8">La Magdalena Contreras</option>
+																					<option value="9">Milpa Alta</option>
+																					<option value="10">Alvaro Obregon</option>
+																					<option value="11">Benito Juarez</option>
+																					<option value="12">Cuauhtemoc</option>
+																					<option value="13">Miguel Hidalgo</option>
+																					<option value="14">Venustiano Carranza</option>
+																				</optgroup>
+																				<optgroup label="Estado de México">
+																					<option value="15">Tlalnepantla</option>
+																					<option value="16">Naucalpan</option>
+																					<option value="17">Tultitlán</option>
+																					<option value="18">Huixquilucan</option>
+																					<option value="19">Nezahualcoyotl</option>
+																					<option value="20">No está en lista</option>
+																				</optgroup>
 																			</select>
 																		</div>
 																		<div class="cotizaForm">
 																			<label for="asunto"><b>Colonia:</b></label>
-																			<input class="textCotiza cotiza1A" type="tel" placeholder="Telefono" name="telefono" required="Please">
+																			<select class="DespCotiza" name="estados">
+																				<option value="0">Seleccione Colonia</option>
+																				<option value="1">Colonia 1</option>
+																				<option value="2">Baja California</option>
+																				<option value="3">Baja California Sur</option>
+																				<option value="4">Campeche</option>
+																				<option value="5">Coahuila de Zaragoza</option>
+																			</select>
 																		</div>
 																		<div class="cotizaForm">
-																			<label for="asunto"><b>Celular:</b></label>
-																			<input class="textCotiza cotiza1A" type="tel" placeholder="Celular" name="telefono" required="Please">
+																			<label for="asunto"><b>Colonia:</b></label>
+																			<input class="textCotiza cotiza1A" type="text" placeholder="Escriba su Colonia" name="telefono" required="Please">
 																		</div>
 																		<div class="cotizaForm">
-																			<label for="asunto"><b>*Correo Electrónico:</b></label>
-																			<input class="textCotiza cotiza1A" type="tel" placeholder="Correo Electrónico" name="telefono" required="Please">
+																		<!--DATE TIME-->
+																		<div class="dateTimeReg">
+																			<label for="date">Fecha: </label>
+																			<input class="hoursSelect" id="date" type="date">
+																			<label for="horaIni"><b>de: </b></label>
+																			<select class="hoursSelect" name="horaIni">
+																				<option value="">Elija Hora:</option>
+																				<option value="0">00:00 hrs</option>
+																				<option value="1">01:00 hrs</option>
+																				<option value="2">02:00 hrs</option>
+																				<option value="3">03:00 hrs</option>
+																				<option value="4">04:00 hrs</option>
+																				<option value="5">05:00 hrs</option>
+																				<option value="6">06:00 hrs</option>
+																				<option value="7">07:00 hrs</option>
+																				<option value="8">08:00 hrs</option>
+																				<option value="9">09:00 hrs</option>
+																				<option value="10">10:00 hrs</option>
+																				<option value="11">11:00 hrs</option>
+																				<option value="12">12:00 hrs</option>
+																				<option value="13">13:00 hrs</option>
+																				<option value="14">14:00 hrs</option>
+																				<option value="15">15:00 hrs</option>
+																				<option value="16">16:00 hrs</option>
+																				<option value="17">17:00 hrs</option>
+																				<option value="18">18:00 hrs</option>
+																				<option value="19">19:00 hrs</option>
+																				<option value="20">20:00 hrs</option>
+																				<option value="21">21:00 hrs</option>
+																				<option value="22">22:00 hrs</option>
+																				<option value="23">23:00 hrs</option>
+																				<option value="24">24:00 hrs</option>
+																			</select>
+																		</div>
 																		</div>
 																	</div>
 																</div>

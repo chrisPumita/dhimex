@@ -2774,6 +2774,13 @@ margin-bottom: 50px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+.hoursSelect{
+	width: auto;
+}
+.dateTimeReg{
+	display: flex;
+align-items: center;
+}
 .userB{
 	display: flex;
 	width: 65%;
