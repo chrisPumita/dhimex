@@ -295,10 +295,6 @@ li.fancyTab.active a {
 			<div class="PVSystem">
 				<div class="txtSystem txtIzq">
 					<h2 class="tService">Solicitud de Servicio Post-Venta</h2>
-					<h1 class="tService">COTIZADOR:</h1>
-					<p>
-						Arma tu solicitud de Servicio, Refacciones y Mantenimiento a todos los sistemas, (full service).
-					</p>
 					<p>
 						<!-- INICIA COTIZADOR-->
 						<div class="container" style="width:  auto;">
@@ -324,186 +320,274 @@ li.fancyTab.active a {
 						        <div>
 						          <div class="row">
 						            <div class="col-md-12">
-						              <h2>This is the content of tab one.</h2>
+													<h1 class="tService">COTIZADOR:</h1>
+													<p>
+														Arma tu solicitud de Servicio, Refacciones y Mantenimiento a todos los sistemas, (full service).
+													</p>
 						              <p>
 														<div class="container" style="width:  100%;	">
+															<form class="" action="index.html" method="post">
 															<div class="caja0">
-																<div class="caja1">
-																	<!-- Material inline 1 -->
-																	<label class="radio-inline">
-																		<input type="radio" name="optradio" checked>Nuevo Cliente
-																	</label>
-																	<label class="radio-inline">
-																		<input type="radio" name="optradio">Ingresar No de Cliente
-																	</label>
-																	<div class="form-group userB">
-																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="userBrouserId" placeholder="Ingrese ID" name="IdUserBrouse">
+																	<div class="caja1">
+																		<!-- Material inline 1 -->
+																		<label class="radio-inline">
+																			<input type="radio" name="optradio" checked>Nuevo Cliente
+																		</label>
+																		<label class="radio-inline">
+																			<input type="radio" name="optradio">Ingresar No de Cliente
+																		</label>
+																		<div class="form-group userB">
+																			<div class="col-sm-10">
+																				<input type="text" class="form-control" id="userBrouserId" placeholder="Ingrese ID" name="IdUserBrouse">
+																			</div>
+																			<button type="submit" class="btn btnCotizador">Buscar</button>
 																		</div>
-																		<button type="submit" class="btn btnCotizador">Buscar</button>
+																		<div class="">
+																			<p class="textoForms">
+																				Datos del Cliente:
+																			</p>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>*Nombre:</b></label>
+																				<input class="textCotiza" type="text" placeholder="Nombre" name="nombre" required="Please">
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>*Apellido Paterno:</b></label>
+																				<input class="textCotiza" type="text" placeholder="Apellido Paterno" name="aPaterno" required="Please">
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>Apellido Materno:</b></label>
+																				<input class="textCotiza" type="text" placeholder="Apellido Materno" name="aMaterno">
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>*Telefono:</b></label>
+																				<input class="textCotiza" type="tel" placeholder="Telefono" name="telefono" required="Please">
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>Celular:</b></label>
+																				<input class="textCotiza" type="tel" placeholder="Celular" name="telefono" required="Please">
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>*Correo Electrónico:</b></label>
+																				<input class="textCotiza" type="tel" placeholder="Correo Electrónico" name="telefono" required="Please">
+																			</div>
+																		</div>
 																	</div>
-																	<div class="caja4">
-																		Datos del Cliente:
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>*Nombre:</b></label>
-																			<input class="textCotiza" type="text" placeholder="Nombre" name="nombre" required="Please">
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>*Apellido Paterno:</b></label>
-																			<input class="textCotiza" type="text" placeholder="Apellido Paterno" name="aPaterno" required="Please">
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>Apellido Materno:</b></label>
-																			<input class="textCotiza" type="text" placeholder="Apellido Materno" name="aMaterno">
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>*Telefono:</b></label>
-																			<input class="textCotiza" type="tel" placeholder="Telefono" name="telefono" required="Please">
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>Celular:</b></label>
-																			<input class="textCotiza" type="tel" placeholder="Celular" name="telefono" required="Please">
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>*Correo Electrónico:</b></label>
-																			<input class="textCotiza" type="tel" placeholder="Correo Electrónico" name="telefono" required="Please">
+																	<div class="caja2">
+																		<div class="">
+																			<p class="textoForms">
+																				Datos del Cliente:
+																			</p>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>*Nombre/Razón Social:</b></label>
+																				<input class="textCotiza cotiza1A" type="text" placeholder="Nombre" name="nombre" required="Please">
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>Estado:</b></label>
+																				<select class="DespCotiza" name="estados">
+																					<option value="0">Elija un Estado</option>
+																					<option value="1">Aguascalientes</option>
+																					<option value="2">Baja California</option>
+																					<option value="3">Baja California Sur</option>
+																					<option value="4">Campeche</option>
+																					<option value="5">Coahuila de Zaragoza</option>
+																					<option value="6">Colima</option>
+																					<option value="7">Chiapas</option>
+																					<option value="8">Chihuahua</option>
+																					<option value="9">Ciudad de México</option>
+																					<option value="10">Durango</option>
+																					<option value="11">Guanajuato</option>
+																					<option value="12">Guerrero</option>
+																					<option value="13">Hidalgo</option>
+																					<option value="14">Jalisco</option>
+																					<option value="15">México</option>
+																					<option value="16">Michoacán de Ocampo</option>
+																					<option value="17">Morelos</option>
+																					<option value="18">Nayarit</option>
+																					<option value="19">Nuevo León</option>
+																					<option value="20">Oaxaca</option>
+																					<option value="21">Puebla</option>
+																					<option value="22">Querétaro</option>
+																					<option value="23">Quintana Roo</option>
+																					<option value="24">San Luis Potosí</option>
+																					<option value="25">Sinaloa</option>
+																					<option value="26">Sonora</option>
+																					<option value="27">Tabasco</option>
+																					<option value="28">Tamaulipas</option>
+																					<option value="29">Tlaxcala</option>
+																					<option value="30">Veracruz de Ignacio de la Llave</option>
+																					<option value="31">Yucatán</option>
+																					<option value="32">Zacatecas</option>
+																				</select>
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>Delegación/Municipio:</b></label>
+																				<select class="DespCotiza" name="municipios">
+																					<optgroup label="CDMX">
+																						<option value="0">Delegacion/Municipio</option>
+																						<option value="2">Azcapotzalco</option>
+																						<option value="3">Coyoacan</option>
+																						<option value="4">Cuajimalpa de Morelos</option>
+																						<option value="5">Gustavo A. Madero</option>
+																						<option value="6">Iztacalco</option>
+																						<option value="7">Iztapalapa</option>
+																						<option value="8">La Magdalena Contreras</option>
+																						<option value="9">Milpa Alta</option>
+																						<option value="10">Alvaro Obregon</option>
+																						<option value="11">Benito Juarez</option>
+																						<option value="12">Cuauhtemoc</option>
+																						<option value="13">Miguel Hidalgo</option>
+																						<option value="14">Venustiano Carranza</option>
+																					</optgroup>
+																					<optgroup label="Estado de México">
+																						<option value="15">Tlalnepantla</option>
+																						<option value="16">Naucalpan</option>
+																						<option value="17">Tultitlán</option>
+																						<option value="18">Huixquilucan</option>
+																						<option value="19">Nezahualcoyotl</option>
+																						<option value="20">No está en lista</option>
+																					</optgroup>
+																				</select>
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>Colonia:</b></label>
+																				<select class="DespCotiza" name="estados">
+																					<option value="0">Seleccione Colonia</option>
+																					<option value="1">Colonia 1</option>
+																					<option value="2">Baja California</option>
+																					<option value="3">Baja California Sur</option>
+																					<option value="4">Campeche</option>
+																					<option value="5">Coahuila de Zaragoza</option>
+																				</select>
+																			</div>
+																			<div class="cotizaForm">
+																				<label for="asunto"><b>Colonia:</b></label>
+																				<input class="textCotiza cotiza1A" type="text" placeholder="Escriba su Colonia" name="telefono" required="Please">
+																			</div>
+																			<div class="cotizaForm">
+																				<!--DATE TIME-->
+																				<div class="dateTimeReg">
+																					<label for="date">Fecha: </label>
+																					<input class="hoursSelect" id="date" type="date">
+																					<label for="horaIni"><b>de: </b></label>
+																					<select class="hoursSelect" name="horaIni">
+																						<option value="">Elija Hora:</option>
+																						<option value="0">00:00 hrs</option>
+																						<option value="1">01:00 hrs</option>
+																						<option value="2">02:00 hrs</option>
+																						<option value="3">03:00 hrs</option>
+																						<option value="4">04:00 hrs</option>
+																						<option value="5">05:00 hrs</option>
+																						<option value="6">06:00 hrs</option>
+																						<option value="7">07:00 hrs</option>
+																						<option value="8">08:00 hrs</option>
+																						<option value="9">09:00 hrs</option>
+																						<option value="10">10:00 hrs</option>
+																						<option value="11">11:00 hrs</option>
+																						<option value="12">12:00 hrs</option>
+																						<option value="13">13:00 hrs</option>
+																						<option value="14">14:00 hrs</option>
+																						<option value="15">15:00 hrs</option>
+																						<option value="16">16:00 hrs</option>
+																						<option value="17">17:00 hrs</option>
+																						<option value="18">18:00 hrs</option>
+																						<option value="19">19:00 hrs</option>
+																						<option value="20">20:00 hrs</option>
+																						<option value="21">21:00 hrs</option>
+																						<option value="22">22:00 hrs</option>
+																						<option value="23">23:00 hrs</option>
+																						<option value="24">24:00 hrs</option>
+																					</select>
+
+																					<label for="horaIni"><b>a: </b></label>
+																					<select class="hoursSelect" name="horaIni">
+																						<option value="">Elija Hora:</option>
+																						<option value="0">00:00 hrs</option>
+																						<option value="1">01:00 hrs</option>
+																						<option value="2">02:00 hrs</option>
+																						<option value="3">03:00 hrs</option>
+																						<option value="4">04:00 hrs</option>
+																						<option value="5">05:00 hrs</option>
+																						<option value="6">06:00 hrs</option>
+																						<option value="7">07:00 hrs</option>
+																						<option value="8">08:00 hrs</option>
+																						<option value="9">09:00 hrs</option>
+																						<option value="10">10:00 hrs</option>
+																						<option value="11">11:00 hrs</option>
+																						<option value="12">12:00 hrs</option>
+																						<option value="13">13:00 hrs</option>
+																						<option value="14">14:00 hrs</option>
+																						<option value="15">15:00 hrs</option>
+																						<option value="16">16:00 hrs</option>
+																						<option value="17">17:00 hrs</option>
+																						<option value="18">18:00 hrs</option>
+																						<option value="19">19:00 hrs</option>
+																						<option value="20">20:00 hrs</option>
+																						<option value="21">21:00 hrs</option>
+																						<option value="22">22:00 hrs</option>
+																						<option value="23">23:00 hrs</option>
+																						<option value="24">24:00 hrs</option>
+																					</select>
+																				</div>
+																				<!--DATE TIME-->
+																			</div>
+																			<!---->
+																			<div class="cotizaForm">
+																				<div class="tablaCosto">
+																					<table class="tg">
+																					  <tr>
+																					    <th class="tg-amwm" colspan="3">VENTA POR HORA USD</th>
+																					  </tr>
+																					  <tr>
+																					    <td class="tg-baqh">T Tr</td>
+																					    <td class="tg-baqh">T Jr</td>
+																					    <td class="tg-baqh">TOTAL</td>
+																					  </tr>
+																					  <tr>
+																					    <td class="tg-baqh">$11</td>
+																					    <td class="tg-baqh">$20</td>
+																					    <td class="tg-amwm">$31</td>
+																					  </tr>
+																					</table>
+																				</div>
+																				<div class="contBOtonesCotiza">
+																				 <input type="reset" name="reset" value="LIMPIAR" class="btnClean bt">
+																				 <input type="reset" name="add" value="AGREGAR" class="btnClean bt">
+																				</div>
+																			</div>
 																		</div>
 																	</div>
 																</div>
-																<div class="caja2">
-																	<div class="caja4">
-																		Datos del Cliente:
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>*Nombre/Razón Social:</b></label>
-																			<input class="textCotiza cotiza1A" type="text" placeholder="Nombre" name="nombre" required="Please">
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>Estado:</b></label>
-																			<select class="DespCotiza" name="estados">
-																				<option value="0">Elija un Estado</option>
-																				<option value="1">Aguascalientes</option>
-																				<option value="2">Baja California</option>
-																				<option value="3">Baja California Sur</option>
-																				<option value="4">Campeche</option>
-																				<option value="5">Coahuila de Zaragoza</option>
-																				<option value="6">Colima</option>
-																				<option value="7">Chiapas</option>
-																				<option value="8">Chihuahua</option>
-																				<option value="9">Ciudad de México</option>
-																				<option value="10">Durango</option>
-																				<option value="11">Guanajuato</option>
-																				<option value="12">Guerrero</option>
-																				<option value="13">Hidalgo</option>
-																				<option value="14">Jalisco</option>
-																				<option value="15">México</option>
-																				<option value="16">Michoacán de Ocampo</option>
-																				<option value="17">Morelos</option>
-																				<option value="18">Nayarit</option>
-																				<option value="19">Nuevo León</option>
-																				<option value="20">Oaxaca</option>
-																				<option value="21">Puebla</option>
-																				<option value="22">Querétaro</option>
-																				<option value="23">Quintana Roo</option>
-																				<option value="24">San Luis Potosí</option>
-																				<option value="25">Sinaloa</option>
-																				<option value="26">Sonora</option>
-																				<option value="27">Tabasco</option>
-																				<option value="28">Tamaulipas</option>
-																				<option value="29">Tlaxcala</option>
-																				<option value="30">Veracruz de Ignacio de la Llave</option>
-																				<option value="31">Yucatán</option>
-																				<option value="32">Zacatecas</option>
-																			</select>
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>Delegación/Municipio:</b></label>
-																			<select class="DespCotiza" name="municipios">
-																				<optgroup label="CDMX">
-																					<option value="0">Delegacion/Municipio</option>
-																					<option value="2">Azcapotzalco</option>
-																					<option value="3">Coyoacan</option>
-																					<option value="4">Cuajimalpa de Morelos</option>
-																					<option value="5">Gustavo A. Madero</option>
-																					<option value="6">Iztacalco</option>
-																					<option value="7">Iztapalapa</option>
-																					<option value="8">La Magdalena Contreras</option>
-																					<option value="9">Milpa Alta</option>
-																					<option value="10">Alvaro Obregon</option>
-																					<option value="11">Benito Juarez</option>
-																					<option value="12">Cuauhtemoc</option>
-																					<option value="13">Miguel Hidalgo</option>
-																					<option value="14">Venustiano Carranza</option>
-																				</optgroup>
-																				<optgroup label="Estado de México">
-																					<option value="15">Tlalnepantla</option>
-																					<option value="16">Naucalpan</option>
-																					<option value="17">Tultitlán</option>
-																					<option value="18">Huixquilucan</option>
-																					<option value="19">Nezahualcoyotl</option>
-																					<option value="20">No está en lista</option>
-																				</optgroup>
-																			</select>
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>Colonia:</b></label>
-																			<select class="DespCotiza" name="estados">
-																				<option value="0">Seleccione Colonia</option>
-																				<option value="1">Colonia 1</option>
-																				<option value="2">Baja California</option>
-																				<option value="3">Baja California Sur</option>
-																				<option value="4">Campeche</option>
-																				<option value="5">Coahuila de Zaragoza</option>
-																			</select>
-																		</div>
-																		<div class="cotizaForm">
-																			<label for="asunto"><b>Colonia:</b></label>
-																			<input class="textCotiza cotiza1A" type="text" placeholder="Escriba su Colonia" name="telefono" required="Please">
-																		</div>
-																		<div class="cotizaForm">
-																		<!--DATE TIME-->
-																		<div class="dateTimeReg">
-																			<label for="date">Fecha: </label>
-																			<input class="hoursSelect" id="date" type="date">
-																			<label for="horaIni"><b>de: </b></label>
-																			<select class="hoursSelect" name="horaIni">
-																				<option value="">Elija Hora:</option>
-																				<option value="0">00:00 hrs</option>
-																				<option value="1">01:00 hrs</option>
-																				<option value="2">02:00 hrs</option>
-																				<option value="3">03:00 hrs</option>
-																				<option value="4">04:00 hrs</option>
-																				<option value="5">05:00 hrs</option>
-																				<option value="6">06:00 hrs</option>
-																				<option value="7">07:00 hrs</option>
-																				<option value="8">08:00 hrs</option>
-																				<option value="9">09:00 hrs</option>
-																				<option value="10">10:00 hrs</option>
-																				<option value="11">11:00 hrs</option>
-																				<option value="12">12:00 hrs</option>
-																				<option value="13">13:00 hrs</option>
-																				<option value="14">14:00 hrs</option>
-																				<option value="15">15:00 hrs</option>
-																				<option value="16">16:00 hrs</option>
-																				<option value="17">17:00 hrs</option>
-																				<option value="18">18:00 hrs</option>
-																				<option value="19">19:00 hrs</option>
-																				<option value="20">20:00 hrs</option>
-																				<option value="21">21:00 hrs</option>
-																				<option value="22">22:00 hrs</option>
-																				<option value="23">23:00 hrs</option>
-																				<option value="24">24:00 hrs</option>
-																			</select>
-																		</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
+															<!--END FORM-->
 															<div class="caja4">
-
+																<p class="textoForms">Servicios Agregados:</p>
+																<table class="tg tblDatas">
+																  <tr>
+																    <th class="tg-hgcj">RAZÓN SOCIAL</th>
+																    <th class="tg-hgcj">LUGAR</th>
+																    <th class="tg-amwm">FECHAS</th>
+																    <th class="tg-amwm">TOTAL</th>
+																    <th class="tg-amwm">STATUS</th>
+																    <th class="tg-amwm">ACCIÓN</th>
+																  </tr>
+																  <tr>
+																    <td class="tg-mrzz">ACEROS SA DE CV</td>
+																    <td class="tg-mrzz">NAUCALPAN</td>
+																    <td class="tg-buh4">29/06/2018</td>
+																    <td class="tg-buh4">$ 1500 USD</td>
+																    <td class="tg-buh4"><img src="icons/warning.png" alt=""> </td>
+																    <td class="tg-buh4"><input id="btnAuto" type="reset" name="reset" value="CANCELAR" class="btnClean"></td>
+																  </tr>
+																  <tr>
+																    <td class="tg-0lax">MECANISMO MX</td>
+																    <td class="tg-0lax">TLALNEPANTLA</td>
+																    <td class="tg-0lax">31/OCT/2018</td>
+																    <td class="tg-0lax">$ 300 US</td>
+																    <td class="tg-0lax"><img src="icons/checked.png" alt=""> </td>
+																    <td class="tg-0lax"><input id="btnAuto" type="reset" name="reset" value="CANCELAR" class="btnClean"></td>
+																  </tr>
+																</table>
 															</div>
-
-						              	<form class="" action="index.html" method="post">
-
+															<button type="submit" class="btn btnCotizador btnSendCot">GENERAR COTIZACIÓN</button>
 														</form>
 													</div>
 						             </p>
@@ -528,9 +612,6 @@ li.fancyTab.active a {
 
 					</p>
 				</div>
-			</div>
-			<div class="IMGSystem">
-				<div class="imgBx contenedorIMG"> <img class="imagenAjustada img" src="image/PostVenta.jpg"> </div>
 			</div>
 		</div>
 

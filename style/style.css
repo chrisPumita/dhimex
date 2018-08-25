@@ -2701,7 +2701,7 @@ margin-bottom: 50px;
 
 
 .PVSystem{
-	width: 80%;
+	width: 100%;
 }
 
 .IMGSystem{
@@ -2720,21 +2720,20 @@ margin-bottom: 50px;
 .caja0{
 	width: 100%;
 	display: flex;
-	background-color: var(--grey1);
+	box-shadow: 1px 1px 1px 1px #fff, 0 0px 0 1px #ddd, -1px 1px 1px 2px #ddd inset;
 }
 
 .caja1{
 	width: 48%;
 	margin: 1%;
-	background-color: var(--grey2);
 }
 .caja2{
 	width: 46%;
 	margin: 2%;
-	background-color: var(--grey2);
 }
 .caja4{
-	width: 98%;
+	width: 94%;
+	margin: 2%;
 }
 
 .cotizaForm{
@@ -2750,9 +2749,6 @@ margin-bottom: 50px;
 	width: 65%;
 	height: 20px;
 	padding: 13px;
-	/* float: right; */
-	/* text-align: center; */
-	/* margin-right: 10%; */
 	margin-left: 2%;
 	display: flex;
 	margin-top: 5px;
@@ -2766,9 +2762,6 @@ margin-bottom: 50px;
 	width: 55%;
 	height: 20px;
 	padding: 13px;
-	/* float: right; */
-	/* text-align: center; */
-	/* margin-right: 10%; */
 	margin-left: 2%;
 	display: flex;
 	margin-top: 5px;
@@ -2776,6 +2769,8 @@ margin-bottom: 50px;
 }
 .hoursSelect{
 	width: auto;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .dateTimeReg{
 	display: flex;
@@ -2794,4 +2789,88 @@ align-items: center;
 .form-control{
 	width: 80% !important;
 margin-left: 10% !important;
+}
+
+.tablaCosto, .contBOtonesCotiza{
+	width: 50%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    display: grid;
+	  justify-content: center;
+}
+/*TABLE SISTEMA*/
+.tg  {width: 100%; margin: 10px;border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-baqh{text-align:center;}
+.tg .tg-amwm{font-weight:bold;text-align:center;}
+
+.tg .tg-buh4{background-color:#f9f9f9;text-align:center;}
+.tg .tg-mrzz{background-color:#f9f9f9;text-align:center;}
+.tg .tg-hgcj{font-weight:bold;text-align:center}
+.tg .tg-amwm{font-weight:bold;text-align:center;}
+.tg .tg-0lax{text-align:center;;vertical-align:top}
+
+
+.tblDatas{
+width: 98%;
+margin: 1%;
+border-collapse: collapse;
+border-spacing: 0;
+border-color: #ccc;
+}
+/*BOTONES*/
+.btnLimpiar{
+	  background: url("iconos.gif") no-repeat scroll 0 0 transparent;
+}
+.btnSendCot{
+	width: 20%;
+	float: right;
+}
+.btnClean {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#f9f9f9;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}.btnClean:hover {
+	background-color:#e9e9e9;
+}.btnClean:active {
+	position:relative;
+	top:1px;
+}
+
+.bt{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.textoForms{
+	    font-weight: 700;
 }
