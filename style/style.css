@@ -2736,6 +2736,18 @@ margin-bottom: 50px;
 	margin: 2%;
 }
 
+.caja20{
+	width: 50%;
+	display: block;
+	margin: 2%;
+}
+.btn20{
+	width: 50%;
+	margin-left: 50%;
+}
+.dataIngreso{
+	display: flex;
+}
 .cotizaForm{
 	width: 100%;
 	height: auto;
