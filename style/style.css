@@ -89,7 +89,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 
 .header{
 	width: 100%;
-	height: 80%;
+	height: 90%;
     position: relative;
     background: url(../image/fondo-header.jpg) center no-repeat;
     background-size: cover;
@@ -128,6 +128,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 	margin: 10px;
 	color: var(--textHover);
     display: block;
+}
+.contLink:hover {
+    margin: 0px;
+}
+
+
+.containerCuentas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .imgLink, .tiitleLink{
@@ -197,7 +207,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     background-size: cover;
     /* margin: 24px; */
     display: block;
-    margin-top: -20vh;
+    margin-top: -10vh;
 }
 
 .ContQuienes{
@@ -378,15 +388,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     float: left;
     border: 3px solid var(--aqua);
 }
+
+.logoWhats{
+        width: 20%;
+}
+.txtWhats{
+        width: 70%;
+}
+
 .FourBanner{
 	width: 100%;
 	height: auto;
 }
 .contServiceHijo{
 	border: 3px solid var(--textHover);
-	height: auto;
+    height: 90%;
 	display: block;
-	color: var(--aqua);
+	color: var(--whitteSolid);
 }
 .ContBannerServ{
     margin-top: 10%;
@@ -400,43 +418,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 }
 
 .tituloBanner{
-	font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .imgServices {
-    margin: 4%;
-    /* margin-left: 50px; */
-    /* margin-right: 50px; */
-    width: 80px;
-    height: 80px;
+    margin: 10%;
+    width: 80%;
+    height: auto;
 }
 .detailsServices{
-	font-size: .8em;
+    font-size: 1.8em;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10%;
+}
+
+.linkProductos{
+    color: var(--textHover) !important;
 }
 
 .ContCuentas{
 	height: 300px;
 }
 
+.yearCourse{
+    width: 100% !important;
+    font-size: 1em !important;
+}
+
 .imgCuenta{
-    height: 100px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* display: block; */
-    width: 18%;
-    height: auto;
-    margin: 2% 1% 2% 1%;
-    text-align: center;
-    /* font-size: 15px; */
+    width: auto;
+    height: 25%;
+    margin: 5% 5% 5% 5%;
+}
+
+.curList{
+        text-decoration: blink !important;
+    list-style: circle !important;
+}
+.contCounts{
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
-    /* border: 3px solid var(--aqua); */
 }
 
 .ContCuentas{
@@ -1256,7 +1278,6 @@ ul.breadcrumb li a:hover {
 }
 
 select {
-   border: none;
    font-size: 10px;
    height: 30px;
    width: 100%;
@@ -1272,7 +1293,6 @@ select:hover {
 }
 
 select, option{
-    color: var(--aqua);
     font-size: .9em;
 }
 
@@ -1524,7 +1544,7 @@ select::-ms-expand {
     /* top: 20px; */
     left: 10px;
     overflow-x: hidden;
-    /* padding: 8px 0; */
+        display: none;
 }
 
 .vertical-menu {
@@ -1757,8 +1777,8 @@ select::-ms-expand {
 }
 
 .contDivCurso{
-    width: 31%;
-    height: 350px;
+    width: 47%;
+    height: auto;
     border: var(--aqua) solid 1px;
 }
 
@@ -1801,11 +1821,12 @@ select::-ms-expand {
     color: var(--grey1);
 }
 .tamCurso1{
-    width: 40%;
+    width: 25%;
 }
 .tamCurso2{
     font-size: 12px;
-    width: 60%;
+    width: 70%;
+    padding-right: 5%;
 }
 .imgOK{
     width: 15px;
@@ -1830,6 +1851,10 @@ select::-ms-expand {
 .txtAddres{
     width: 100%;
     display: flex;
+}
+
+.modificar{
+    cursor: pointer;
 }
 .txtDirCurso{
     font-size: 13px;
@@ -2202,9 +2227,17 @@ select::-ms-expand {
         margin: 3% 3% 3% 3%;
     }
 
-    .imgCuenta {
-        width: 15%;
-        margin: 0% 1% 0% 1%;
+.imgCuenta {
+    width: 60%;
+    margin: 5% 5% 5% 5%;
+}
+
+.containerCuentas {
+    grid-template-columns: auto auto auto;
+}
+
+    .ContCuentas {
+        height: 150px;
     }
 
     .ContBelive {
@@ -2283,6 +2316,18 @@ select::-ms-expand {
 	.ContMenu {
     display: none;
 	}
+
+    .containerCuentas {
+    grid-template-columns: auto;
+}
+
+.imgCuenta {
+    width: 40%;
+}
+
+.ContCuentas {
+    height: 150px;
+}
 
 	.ContX {
 	    width: 5%;
@@ -2773,7 +2818,6 @@ margin-bottom: 50px;
 	position: relative;
 	width: 55%;
 	height: 20px;
-	padding: 13px;
 	margin-left: 2%;
 	display: flex;
 	margin-top: 5px;
