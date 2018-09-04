@@ -142,7 +142,7 @@
 										<li class="curList">SUB DIVISION DE LAS BOMBAS DE DESPLAZAMIENTO POSITIVO</li>
 										<li class="curList">TIPOS DE BOMBAS DE DESPLAZAMIENTO POSITIVO</li>
 										<li class="curList">SUB DIVISION DE LAS BOMBAS CINETICAS</li>
-										<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+										<a href="cursos/CT01.pdf" target="_blank" ><li class="curList" style="color: red;">VER MAS</li></a>
 									</ol>
 								</span>
 							</div>

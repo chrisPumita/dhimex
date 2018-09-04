@@ -552,9 +552,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     float: left;
 }
 .imgMarcas{
-	width: 90%;
-height: auto;
-margin: 5% 5% 5% 5%;
+	width: 150px;
+	height: auto;
+	margin: 5% 5% 5% 5%;
 }
 
 .borderPie{
