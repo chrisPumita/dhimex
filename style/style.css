@@ -73,6 +73,14 @@ background: linear-gradient(to bottom, rgba(47,162,182,0.5) 0%, rgba(64,164,191,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', endColorstr='#2fa2b6', GradientType=0 );
 }
 
+.filtrerWthas{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+0,000000+100&0.77+0,0.76+100 */
+	background: -moz-linear-gradient(top, rgba(14,14,14,0.77) 0%, rgba(0,0,0,0.76) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(14,14,14,0.77) 0%,rgba(0,0,0,0.76) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(14,14,14,0.77) 0%,rgba(0,0,0,0.76) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40e0e0e', endColorstr='#c2000000',GradientType=0 ); /* IE6-9 */
+}
+
 *{
     transition: width 2s;
 }
@@ -86,6 +94,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 	width: 100%;
 	height: 100vh;
 }
+
+/*ID FORMS*/
+#iUser{
+	display: none;
+}
+/*ID FORMS*/
+
+/*------------------------------*/
 
 .header{
 	width: 100%;
@@ -250,6 +266,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     border-bottom: var(--grey1) solid 10px;
     padding-top: 0px;
     padding-bottom: 20px;
+
+	      margin-left: 10%;
 }
 .gralBoton{
 	background-color: var(--grey1);
@@ -473,7 +491,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     stroke: var(--grey1);
     stroke-width: 0;
 }
-
+.txtAcor{
+	width: 98%;
+	font-size: 2em !important;
+	text-align: center;
+	padding: 1%;
+}
 .contTriangulo {
     /* width: 954px; */
     height: 190%;
@@ -494,7 +517,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 	height: 100%;
 	display: block;
 }
-
+.productosName:hover{
+	background-color: var(--aqua);
+}
 .ContEnlaces{
 	width: 100%;
 	height: auto;
@@ -503,7 +528,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 	font-size: .8em;
 	color: var(--grey1);
 }
-
+.txtCOntCata{
+	padding: 20px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
 .ContLinksPie{
     width: 33.33%;
     display: block;
@@ -519,6 +550,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     justify-content: center;
     align-items: center;
     float: left;
+}
+.imgMarcas{
+	width: 90%;
+height: auto;
+margin: 5% 5% 5% 5%;
 }
 
 .borderPie{
@@ -546,6 +582,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 		-ms-transform: skew(-20deg);
 		-o-transform: skew(-20deg);
 		transform: skew(-20deg);
+}
+.containerCatalog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .buttonPie:hover{
@@ -869,8 +910,8 @@ ul.breadcrumb li a:hover {
 
 .visioMisio{
 	padding-left: 50px;
-    padding-right: 50px;
-    font-size: .9em;
+	padding-right: 50px;
+	font-size: 1.5em;
 }
 .ContBelive{
     width: 100%;
@@ -1575,12 +1616,18 @@ select::-ms-expand {
 }
 
 .main {
-    width: 80%;
+    width: 100%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 28px;
     padding: 0px 10px;
     position: relative;
+}
+
+.txtCursosEnunciado{
+	font-size: 1em;
+	color: var(--aqua);
+text-shadow: 1px 3px 10px #aaa;
 }
 
 .contTContacto{
@@ -1777,8 +1824,8 @@ select::-ms-expand {
 }
 
 .contDivCurso{
-    width: 47%;
-    height: auto;
+    width: 30%;
+    height: 550px;
     border: var(--aqua) solid 1px;
 }
 
@@ -1821,12 +1868,14 @@ select::-ms-expand {
     color: var(--grey1);
 }
 .tamCurso1{
-    width: 25%;
+	width: 100%;
+	display: flex;
+	display: flex;
+	justify-content: center;
 }
 .tamCurso2{
     font-size: 12px;
     width: 70%;
-    padding-right: 5%;
 }
 .imgOK{
     width: 15px;
@@ -1840,12 +1889,12 @@ select::-ms-expand {
     text-align: center;
     font-size: 17px;
     margin: 0px;
-    padding: 5%;
+    padding: 2%;
 }
 .contCoste{
     width: 100%;
     height: auto;
-    display: flex;
+    display: initial;
 }
 
 .txtAddres{
@@ -2834,8 +2883,8 @@ align-items: center;
 }
 .userB{
 	display: flex;
-	width: 65%;
-	margin-left: 25%;
+	width: 100%;
+	/* margin-left: 25%; */
 }
 
 .btnCotizador{
@@ -2843,16 +2892,17 @@ align-items: center;
 	border-color: var(--whittesolid);
 }
 .form-control{
-	width: 80% !important;
-margin-left: 10% !important;
+	width: 100% !important;
+	margin-left: 2% !important;
+	margin-right: 2% !important;
 }
 
 .tablaCosto, .contBOtonesCotiza{
-	width: 50%;
+	width: 100%;
     text-align: center;
     align-items: center;
     position: relative;
-    display: grid;
+    display: flex;
 	  justify-content: center;
 }
 /*TABLE SISTEMA*/
@@ -2923,10 +2973,15 @@ border-color: #ccc;
 }
 
 .bt{
-	margin-bottom: 10px;
-	margin-top: 10px;
+margin: 20px;
 }
 
 .textoForms{
 	    font-weight: 700;
+}
+
+
+
+.ingresaUser{
+	display: flex;
 }

@@ -16,7 +16,7 @@
 			<img class="logoHeader" src="image/logo-dhimex.png" alt="Logo Dhimex">
 		</div>
 		<a href="about.html">NOSOTROS</a>
-		<a href="productos.php">PRODUCTOS</a>
+		<a href="catalogo.html">PRODUCTOS</a>
 		<a href="servicios.html">SERVICIOS</a>
 		<a href="capacitacion.php">CAPACITACIÓN</a>
 		<a href="contacto.html">CONTACTO</a>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="topnav" id="myTopnav">
 				  <a href="about.html">NOSOTROS</a>
-				  <a class="onFocus" href="productos.php">PRODUCTOS</a>
+				  <a class="onFocus" href="catalogo.html">PRODUCTOS</a>
 				  <a href="servicios.html">SERVICIOS</a>
 				  <a href="capacitacion.php">CAPACITACIÓN</a>
 				  <a href="contacto.html">CONTACTO</a>

@@ -250,7 +250,7 @@ li.fancyTab.active a {
 			<img class="logoHeader" src="image/logo-dhimex.png" alt="Logo Dhimex">
 		</div>
 		<a href="about.html">NOSOTROS</a>
-		<a href="productos.php">PRODUCTOS</a>
+		<a href="catalogo.html">PRODUCTOS</a>
 		<a href="servicios.html">SERVICIOS</a>
 		<a href="capacitacion.php">CAPACITACIÓN</a>
 		<a href="contacto.html">CONTACTO</a>
@@ -266,7 +266,7 @@ li.fancyTab.active a {
 				</div>
 				<div class="topnav" id="myTopnav">
 				  <a href="about.html">NOSOTROS</a>
-				  <a href="productos.php">PRODUCTOS</a>
+				  <a href="catalogo.html">PRODUCTOS</a>
 				  <a class="onFocus" href="servicios.html">SERVICIOS</a>
 				  <a href="capacitacion.php">CAPACITACIÓN</a>
 				  <a href="contacto.html">CONTACTO</a>
@@ -326,22 +326,35 @@ li.fancyTab.active a {
 													</p>
 						              <p>
 														<div class="container" style="width:  100%;	">
-															<form class="" action="index.html" method="post">
 															<div class="caja0">
 																	<div class="caja1">
 																		<!-- Material inline 1 -->
-																		<label class="radio-inline">
-																			<input type="radio" name="optradio" checked>Nuevo Cliente
-																		</label>
-																		<label class="radio-inline">
-																			<input type="radio" name="optradio">Ingresar No de Cliente
-																		</label>
-																		<div class="form-group userB">
-																			<div class="col-sm-10">
-																				<input type="text" class="form-control" id="userBrouserId" placeholder="Ingrese ID" name="IdUserBrouse">
+																		<form class="" action="busca.php" method="post">
+																			<label class="radio-inline">
+																				<input type="radio" name="optradio" onclick="OcultarICliente();"  checked>Nuevo Cliente
+																			</label>
+																			<label class="radio-inline">
+																				<input type="radio" name="optradio" onclick="MostrarICliente();">Ingresar No de Cliente
+																			</label>
+
+																			<script type="text/javascript">
+																			function OcultarICliente(){
+																					document.getElementById('iUser').style.display ='none';
+																					}
+																					function MostrarICliente(){
+																					document.getElementById('iUser').style.display = 'flex';
+																					}
+																			</script>
+
+																			<div id="iUser" class="form-group userB">
+																				<div class="ingresaUser">
+																					<input type="text" class="form-control" id="idUser" placeholder="Ingrese ID" name="IdUserBrouse" required="Please">
+																					<input type="email" class="form-control" id="idmail" placeholder="Email" name="IdUserBrouse" required="Please">
+																					<button type="submit" class="btn btnCotizador">Buscar</button>
+																				</div>
 																			</div>
-																			<button type="submit" class="btn btnCotizador">Buscar</button>
-																		</div>
+																	</form>
+															<form class="" action="index.html" method="post">
 																		<div class="">
 																			<p class="textoForms">
 																				Datos del Cliente:
@@ -533,23 +546,6 @@ li.fancyTab.active a {
 																			</div>
 																			<!---->
 																			<div class="cotizaForm">
-																				<div class="tablaCosto">
-																					<table class="tg">
-																					  <tr>
-																					    <th class="tg-amwm" colspan="3">VENTA POR HORA USD</th>
-																					  </tr>
-																					  <tr>
-																					    <td class="tg-baqh">T Tr</td>
-																					    <td class="tg-baqh">T Jr</td>
-																					    <td class="tg-baqh">TOTAL</td>
-																					  </tr>
-																					  <tr>
-																					    <td class="tg-baqh">$11</td>
-																					    <td class="tg-baqh">$20</td>
-																					    <td class="tg-amwm">$31</td>
-																					  </tr>
-																					</table>
-																				</div>
 																				<div class="contBOtonesCotiza">
 																				 <input type="reset" name="reset" value="LIMPIAR" class="btnClean bt">
 																				 <input type="reset" name="add" value="AGREGAR" class="btnClean bt">
@@ -567,7 +563,6 @@ li.fancyTab.active a {
 																    <th class="tg-hgcj">LUGAR</th>
 																    <th class="tg-amwm">FECHAS</th>
 																    <th class="tg-amwm">TOTAL</th>
-																    <th class="tg-amwm">STATUS</th>
 																    <th class="tg-amwm">ACCIÓN</th>
 																  </tr>
 																  <tr>
@@ -575,7 +570,6 @@ li.fancyTab.active a {
 																    <td class="tg-mrzz">NAUCALPAN</td>
 																    <td class="tg-buh4">29/06/2018</td>
 																    <td class="tg-buh4">$ 1500 USD</td>
-																    <td class="tg-buh4"><img src="icons/warning.png" alt=""> </td>
 																    <td class="tg-buh4"><input id="btnAuto" type="reset" name="reset" value="CANCELAR" class="btnClean"></td>
 																  </tr>
 																  <tr>
@@ -583,7 +577,6 @@ li.fancyTab.active a {
 																    <td class="tg-0lax">TLALNEPANTLA</td>
 																    <td class="tg-0lax">31/OCT/2018</td>
 																    <td class="tg-0lax">$ 300 US</td>
-																    <td class="tg-0lax"><img src="icons/checked.png" alt=""> </td>
 																    <td class="tg-0lax"><input id="btnAuto" type="reset" name="reset" value="CANCELAR" class="btnClean"></td>
 																  </tr>
 																</table>
@@ -848,6 +841,19 @@ li.fancyTab.active a {
 				</div>
 			</div>
 
+						<div class="ContService">
+							<div class="ContTxtServ2">
+								<div class="txtService txtDer">
+									<h2 class="tService">Puesta en Marcha</h2>
+									<p>
+										Asesoría en la instalación, calibración y puesta en marcha de sistemas y equipos
+									</p>
+								</div>
+							</div>
+							<div class="IMGServ">
+								<div class="imgBx contenedorIMG"> <img class="imagenAjustada img" src="image/EnMarcha.jpg"> </div>
+							</div>
+						</div>
 		</div>
 
 		<div class="ContBanner ImgBanner3">
@@ -864,22 +870,6 @@ li.fancyTab.active a {
 
 		<div class="bloque imgBloqueDer">
 
-			<div class="ContService">
-				<div class="ContTxtServ2">
-					<div class="txtService txtDer">
-						<h2 class="tService">VIDEOCONFERENCIAS</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation.
-						</p>
-						<button class="buttonPie btnService" style="vertical-align:middle"><span>Ver Conferencias</span></button>
-					</div>
-				</div>
-				<div class="IMGServ">
-					<div class="imgBx contenedorIMG"> <img class="imagenAjustada img" src="image/VIdeoConferencia.jpg"> </div>
-				</div>
-			</div>
 
 			<div class="ContService">
 				<div class="IMGServ">
@@ -901,14 +891,17 @@ li.fancyTab.active a {
 			<div class="ContService">
 				<div class="ContTxtServ2">
 					<div class="txtService txtDer">
-						<h2 class="tService">Puesta en Marcha</h2>
+						<h2 class="tService">VIDEOCONFERENCIAS</h2>
 						<p>
-							Asesoría en la instalación, calibración y puesta en marcha de sistemas y equipos
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation.
 						</p>
+						<button class="buttonPie btnService" style="vertical-align:middle"><span>Ver Conferencias</span></button>
 					</div>
 				</div>
 				<div class="IMGServ">
-					<div class="imgBx contenedorIMG"> <img class="imagenAjustada img" src="image/EnMarcha.jpg"> </div>
+					<div class="imgBx contenedorIMG"> <img class="imagenAjustada img" src="image/VIdeoConferencia.jpg"> </div>
 				</div>
 			</div>
 		</div>
