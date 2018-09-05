@@ -1949,7 +1949,8 @@ text-shadow: 1px 3px 10px #aaa;
 }
 
 .imgBannerHome{
-    height: 50px;
+	height: 50px;
+	margin-top: 10px;
 }
 
 .productoMje{
@@ -2375,7 +2376,7 @@ text-shadow: 1px 3px 10px #aaa;
 }
 
 .ContCuentas {
-    height: 150px;
+    height: auto;
 }
 
 	.ContX {
@@ -2445,7 +2446,7 @@ margin-bottom: 50px;
 .contHijoServ {
     -moz-box-sizing: border-box;
     width: 98%;
-    height: 260px;
+    height: auto;
     border: 3px solid var(--google);
 }
 .imgServices {

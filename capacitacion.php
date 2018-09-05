@@ -194,7 +194,7 @@
 										<li  class="curList">CONSTANTES UNIVERSALES</li>
 										<li  class="curList">TABLA DE EQUIVALENCIA DE TEMPERATURAS EN DIFERENTES ESCALAS</li>
 										<li  class="curList">TABLAS DE CONVERSION</li>
-										<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+										<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 									</ol>
 								</span>
@@ -242,7 +242,7 @@
 											<li  class="curList">VISCOSIDAD</li>
 											<li  class="curList">FUJO DE LIQUIDOS EN TUBERÍAS</li>
 											<li  class="curList">FRICCIÓN</li>
-											<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+											<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 										</ol>
 									</span>
@@ -290,7 +290,7 @@
 													<li  class="curList">CARGA NETA DE SUCCION (NPSH)</li>
 													<li  class="curList">EFICIENCIA DE LA BOMBA</li>
 													<li  class="curList">VELOCIDAD ESPECIFICA</li>
-												<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+												<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 											</ol>
 										</span>
@@ -350,7 +350,7 @@
 														<li class="curList">ALINEACION FINAL – APRIETE DE PERNOS</li>
 														<li class="curList">TUBERÍA DE SUCCION Y DESCARGA – COMENTARIOS GENERALES</li>
 														<li class="curList">REQUERIMIENTOS DE LA TUBERÍA DE SUCCION</li>
-													<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+													<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 												</ol>
 											</span>
 										</div>
@@ -398,7 +398,7 @@
 														<li  class="curList">AGUA / AGUA</li>
 														<li  class="curList">AGUA / ACEITE</li>
 														<li  class="curList">AGUA / GLICOL</li>
-													<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+													<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 												</ol>
 											</span>
@@ -447,7 +447,7 @@
 															<li  class="curList">Booster Duplex </li>
 															<li  class="curList">Booster Triplex</li>
 															<li  class="curList">Booster Cuádruplex</li>
-														<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+														<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 													</ol>
 												</span>
@@ -492,7 +492,7 @@
 																<li  class="curList">AHORRO DE ENERGIA</li>
 																<li  class="curList">SISTEMAS CON CARGA ESTATICA</li>
 																<li  class="curList">TABLERO DE FUERZA Y CONTROL DHIMEX</li>
-															<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+															<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 														</ol>
 													</span>
@@ -540,7 +540,7 @@
 																	<li  class="curList">Controladores de motores eléctricos y accesorios</li>
 																	<li  class="curList">Motor Diesel</li>
 																	<li  class="curList">Controlador de motor de combustión</li>
-																<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+																<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 															</ol>
 														</span>
@@ -582,7 +582,7 @@
 																		<li  class="curList">Sistemas hidráulicos abiertos y cerrados</li>
 																		<li  class="curList">Accesorios hidrónicos</li>
 																		<li  class="curList">Dimensionamiento de tanques de expansión</li>
-																	<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+																	<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 																</ol>
 															</span>
@@ -630,7 +630,7 @@
 																			<li  class="curList">Dimensionamiento de tubería</li>
 																			<li  class="curList">Medición de gasto</li>
 																			<li  class="curList">Materiales de tubería</li>
-																		<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+																		<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 																	</ol>
 																</span>
@@ -674,7 +674,7 @@
 																				<li  class="curList">TUBERÍA COMÚN</li>
 																				<li  class="curList">CIRCUITO PRIMARIO</li>
 																				<li  class="curList">BOMBA SECUNDARIA</li>
-																			<a href="cursos/CT01.pdf" target="_blank" ><li  class="curList">VER MAS</li></a>
+																			<a href="#" target="_blank" ><li  class="curList">VER MAS</li></a>
 
 																		</ol>
 																	</span>
@@ -696,7 +696,7 @@
 
 		<div id="id01" class="modal">
 
-		  <form class="modal-content animate" action="/action_page.php">
+		  <form class="modal-content animate" action="inscripcion_curso.php" method="POST">
 		    <div class="imgcontainer">
 		      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 		      <img src="image/logo-dhimex.png" alt="Avatar" class="avatar">
@@ -708,32 +708,32 @@
 							Datos del Cliente:
 						</p>
 						<div class="cotizaForm">
-							<label for="asunto"><b>*Nombre Completo:</b></label>
+							<label for="nombre"><b>*Nombre Completo:</b></label>
 							<input class="textCotiza" type="text" placeholder="Nombre completo" name="nombre" required="Please">
 						</div>
 						<div class="cotizaForm">
-							<label for="asunto"><b>*Telefono Fijo:</b></label>
-							<input class="textCotiza" type="tel" placeholder="Telefono Fijo" name="aPaterno" required="Please">
+							<label for="telefono"><b>*Telefono Fijo:</b></label>
+							<input class="textCotiza" type="tel" placeholder="Ingrese Telefono Fijo" name="tel" required="Please">
 						</div>
 						<div class="cotizaForm">
-							<label for="asunto"><b>Celular:</b></label>
-							<input class="textCotiza" type="tel" placeholder="Celular" name="aMaterno">
+							<label for="celular"><b>Celular:</b></label>
+							<input class="textCotiza" type="tel" placeholder="Ingrese Celular" name="cel">
 						</div>
 						<div class="cotizaForm">
-							<label for="asunto"><b>*Empresa:</b></label>
-							<input class="textCotiza" type="text" placeholder="Empresa" name="telefono" required="Please">
+							<label for="empresa"><b>*Empresa:</b></label>
+							<input class="textCotiza" type="text" placeholder="Nombre de la empresa" name="empresa" required="Please">
 						</div>
 						<div class="cotizaForm">
-							<label for="asunto"><b>Puesto:</b></label>
-							<input class="textCotiza" type="text" placeholder="Puesto" name="telefono" required="Please">
+							<label for="puesto"><b>Puesto:</b></label>
+							<input class="textCotiza" type="text" placeholder="Puesto que desempeña" name="puesto" required="Please">
 						</div>
 						<div class="cotizaForm">
-							<label for="asunto"><b>*Correo Electrónico:</b></label>
-							<input class="textCotiza" type="tel" placeholder="Correo Electrónico" name="telefono" required="Please">
+							<label for="mail"><b>*Correo Electrónico:</b></label>
+							<input class="textCotiza" type="email" placeholder="Escriba su Correo Electrónico" name="mail" required="Please">
 						</div>
 						<div class="cotizaForm">
-							<label for="asunto"><b>CURSO:</b></label>
-							<select class="despCurso" name="estados">
+							<label for="curso"><b>CURSO:</b></label>
+							<select class="despCurso" name="curso">
 								<option value="0">SELECCIONE CURSO</option>
 								<option value="CT01">Introduccion a bombas</option>
 							</select>
@@ -758,7 +758,7 @@
 					<a href="index.html" "email me"><img class="logoPie" src="image/logo-dhimex.png"></a>
 					<p>(+52) 55 • 5356 • 6530 </p>
 					<p>contacto@dhimex.com</p>
-					<p>Torongil No. 180- A Victorias de las Democracias CDMX. CP 02810</p>
+					<p>Toronjil No. 180- A Victorias de las Democracias CDMX. CP 02810</p>
 					<a href="contacto.html#form" title="Contactar a DHIMEX">
 						<button class="buttonPie" style="vertical-align:middle"><span class="txtBTN">Contacto </span></button></a>
 				</div>

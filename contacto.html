@@ -241,45 +241,43 @@
 			  <hr class="line">
 			  <div id="form" class="ContForm">
 			  	<h3 class="txtForm">Escribenos un mensaje y nos pondremos en contacto contigo</h3>
-			  	<form action="/action_page.php">
-
-                	<div class="txtForm">
-                		<div class="contFormCampo">
-                			<div class="campoForm">
-					            <label for="name"><b>*Nombre:</b></label>
-			                    <input class="textField" type="text" placeholder="Escriba su nombre" id="nombre" name="name" required="Please">
-	                		</div>
-	                		<div class="campoForm">
-	                			<label for="email"><b>*Email:</b></label>
-	                      		<input class="textField" type="email" placeholder="Enter Email" name="email" required="Please">
-	                		</div>
-                		</div>
-                		<div class="contFormCampo">
-	                		<div class="campoForm">
-	                			<label for="tel"><b>*Teléfono:</b></label>
-		                 		<input class="textField" type="tel" placeholder="Ingrese su Teléfono" name="phone" required="Please">
-	                		</div>
-	                		<div class="campoForm">
-	                			<label for="asunto"><b>Asunto:</b></label>
-	                    		<input class="textField" type="text" placeholder="Asunto del mensaje" name="phone" required="Please">
-	                		</div>
-                		</div>
-                		<div class="campoFormLong">
+			  	<form action="send.php" method="POST">
+	        	<div class="txtForm">
+	        		<div class="contFormCampo">
+	        			<div class="campoForm">
+		            <label for="nombre"><b>*Nombre:</b></label>
+	                  <input class="textField" type="text" placeholder="Escriba su nombre" id="nombre" name="nombre" required="Please">
+	          		</div>
+	          		<div class="campoForm">
+	          			<label for="correo"><b>*Email:</b></label>
+	                		<input class="textField" type="email" placeholder="Ingrese Email" name="correo" required="Please">
+	          		</div>
+	        		</div>
+	        		<div class="contFormCampo">
+	          		<div class="campoForm">
+	          			<label for="tel"><b>*Teléfono:</b></label>
+	             		<input class="textField" type="tel" placeholder="Ingrese su Teléfono" name="tel" required="Please">
+	          		</div>
+	          		<div class="campoForm">
+	          			<label for="asunto"><b>Asunto:</b></label>
+	              		<input class="textField" type="text" placeholder="Asunto del mensaje" name="asunto" required="Please">
+	          		</div>
+	        		</div>
+	        		<div class="campoFormLong">
 							<label for="tel"><b>*Comentario:</b></label>
-                      		<textarea class="txtArea txtComent" cols="30" rows="5" name="comentario" placeholder="Escriba su comentario o mensaje" required="Please"></textarea>
+	              		<textarea class="txtArea txtComent" cols="30" rows="5" name="comentario" placeholder="Escriba su comentario o mensaje" required="Please"></textarea>
+	        		</div>
+	        		<div class="protectionInfo">
 
-                		</div>
-                		<div class="protectionInfo">
-
-                         	<p class="txtForm">*Campo Obligatorio. <br> Sus datos estan protegidos. Porfavor lea nuestro
-                         	<ins><a href="#"> Aviso de Privacidad</a></ins>.
-		                	</p>
-		                	<div>
-		                		<button class="button btnAqua" style="vertical-align:middle;"><span>Enviar</span></button>
-		                	</div>
-                		</div>
-                	</div>
-                </form>
+	                 	<p class="txtForm">*Campo Obligatorio. <br> Sus datos estan protegidos. Porfavor lea nuestro
+	                 	<ins><a href="#"> Aviso de Privacidad</a></ins>.
+	            	</p>
+	            	<div>
+	            		<button class="button btnAqua" style="vertical-align:middle;"><span>Enviar</span></button>
+	            	</div>
+	        		</div>
+	        	</div>
+	        </form>
 			  </div>
 			</div>
 		</div>
@@ -299,7 +297,7 @@
 					<a href="index.html" "email me"><img class="logoPie" src="image/logo-dhimex.png"></a>
 					<p>(+52) 55 • 5356 • 6530 </p>
 					<p>contacto@dhimex.com</p>
-					<p>Torongil No. 180- A Victorias de las Democracias CDMX. CP 02810</p>
+					<p>Toronjil No. 180- A Victorias de las Democracias CDMX. CP 02810</p>
 					<a href="contacto.html#form" title="Contactar a DHIMEX">
 						<button class="buttonPie" style="vertical-align:middle"><span class="txtBTN">Contacto </span></button></a>
 				</div>
