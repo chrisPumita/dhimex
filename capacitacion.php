@@ -85,7 +85,7 @@
 			<div class="main">
 				<div class="filtrerCursos">
 					<div id="myBtnFilContainer">
-						<h1 class="txtCursosEnunciado">*Se otorga acreditacion PDH (Professional Development Hour) junto con diploma</h1>
+						<h1 class="txtCursosEnunciado">*Se entrega Certificado de Acreditación PDH (Professional Development Hour)</h1>
 					</div>
 				</div>
 			<div class="ContTiitle">
@@ -708,8 +708,12 @@
 							Datos del Cliente:
 						</p>
 						<div class="cotizaForm">
-							<label for="nombre"><b>*Nombre Completo:</b></label>
-							<input class="textCotiza" type="text" placeholder="Nombre completo" name="nombre" required="Please">
+							<label for="nombre"><b>*Nombre</b></label>
+							<input class="textCotiza" type="text" placeholder="Escriba su Nombre" name="nombre" required="Please">
+						</div>
+						<div class="cotizaForm">
+							<label for="nombre"><b>*Apellidos</b></label>
+							<input class="textCotiza" type="text" placeholder="Escriba sus apellidos" name="apellido" required="Please">
 						</div>
 						<div class="cotizaForm">
 							<label for="telefono"><b>*Telefono Fijo:</b></label>
@@ -758,40 +762,38 @@
 					<a href="index.html" "email me"><img class="logoPie" src="image/logo-dhimex.png"></a>
 					<p>(+52) 55 • 5356 • 6530 </p>
 					<p>contacto@dhimex.com</p>
-					<p>Toronjil No. 180- A Victorias de las Democracias CDMX. CP 02810</p>
+					<p>Toronjil No. 180-A Victoria de las Democracias, CDMX, C.P. 02810</p>
 					<a href="contacto.html#form" title="Contactar a DHIMEX">
 						<button class="buttonPie" style="vertical-align:middle"><span class="txtBTN">Contacto </span></button></a>
 				</div>
 				<div class="ContLinksPie borderPie">
-					<h3 class="titlePlie">SECTORES DE MERCADO</h3>
-					<ul class="linksPies">
-						<a href="about.html#sectores" title="Servicios"><li>Construcción Comercial</li></a>
-						<a href="about.html#sectores" title="Servicios"><li>Construccion Residencial</li></a>
-						<a href="about.html#sectores" title="Servicios"> <li>Indistria Lijera</li></a>
-					</ul>
-					<h3 class="titlePlie">NUESTROS SERVICIOS</h3>
-					<ul class="linksPies">
-					  <a href="capacitacion.php" title="Servicios"><li>Capacitación </li></a>
-					  <a href="capacitacion.php" title="Servicios"><li>Cursos</li></a>
-					  <a href="https://dhimex.webex.com/mw3300/mywebex/default.do?siteurl=dhimex"><li>Conferencias</li></a>
-					  <a href="http://epump-flo.com/reg/login.aspx?ReturnUrl=%2fpumpselection%2fstorefront.aspx%3fdirname%3ddhimex&dirname=dhimex" title="">
-					  <li>Software</li></a>
-					</ul>
+					<h3 class="titlePlie">EVENTOS Y NOTICIAS</h3>
+					<div class="imgNoticeFooter contenedorIMG">
+						<a href="noticias.html" title="Ver noticias y eventos">
+							<img class="imagenAjustada img" src="image/events/eventFooter.JPG"></a>
+
+					</div>
 				</div>
 				<div class="ContLinksPie borderPie">
 					<h3 class="titlePlie">ENLACES RÁPIDOS</h3>
 					<ul class="linksPies">
-					  <a href="" title=""></a><li>Aviso de Privacidad</li>
-					  <li>Legal</li>
-					  <li>Bolsa de Trabajo</li>
-					  <li>Noticias</li>
+					  <a href="" title=""></a>
+						<li>Aviso de Privacidad</li>
+						<a href="http://epump-flo.com/reg/login.aspx?ReturnUrl=%2fpumpselection%2fstorefront.aspx%3fdirname%3ddhimex&dirname=dhimex" title="">
+							<li>Software</li></a>
+					</ul>
+					<h3 class="titlePlie">NUESTROS SERVICIOS</h3>
+					<ul class="linksPies">
+						<a href="capacitacion.php" title="Capacítate"><li>Capacitación </li></a>
+						<a href="servicios.html#fancyTabWidget" title="Cotizador de servicios"><li>Servicio Post-Venta </li></a>
+						<a href="https://dhimex.webex.com/mw3300/mywebex/default.do?siteurl=dhimex" title="Accede a conferencias via WebEx"><li>Conferencias</li></a>
 					</ul>
 
 					<h3 class="titlePlie">Suscribete A Nuestro Newsletter </h3>
-					<form class="news" action="index_submit" method="get" accept-charset="utf-8">
+					<form class="news" action="newsletther.php" method="POST" accept-charset="utf-8">
 						  <div class="input-container">
-						    <input class="input-field" type="text" placeholder="Escriba su correo electrónico" name="usrnm">
-						    <button class="buttonPie" style="vertical-align:middle"><span class="txtBTN">Enviar </span></button>
+						    <input class="input-field" type="email" placeholder="Escriba su correo electrónico" name="correo_news" required>
+						    <button class="buttonPie" style="vertical-align:middle"><span>Enviar </span></button>
 						  </div>
 
 					</form>
@@ -807,6 +809,7 @@
 			</div>
 		</div>
 	</footer>
+
 <style media="screen">
 
 /* Extra styles for the cancel button */
@@ -850,8 +853,8 @@ img.avatar {
 	margin: 0%;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-bottom: 2%;
-	width: 75%;
+	/* margin-bottom: 2%; */
+	width: 80%;
 }
 
 span.psw {

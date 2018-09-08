@@ -102,7 +102,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 /*ID FORMS*/
 
 /*------------------------------*/
-
+.MenuSpan{
+	display: none;
+}
 .header{
 	width: 100%;
 	height: 90%;
@@ -137,13 +139,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
     height: 35%;
     display: flex;
 }
-
+.mensaje{
+	color: darkgray;
+font-size: x-large;
+background-color: gainsboro;
+justify-content: center;
+}
 .contLink{
 	text-align: center;
 	width: 100%;
-	margin: 10px;
+	margin: 5px;
 	color: var(--textHover);
-    display: block;
+  display: block;
 }
 .contLink:hover {
     margin: 0px;
@@ -235,11 +242,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
 	height: auto;
 }
 .ContImagesAbout{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	margin-top: 10%;
+	margin-bottom: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .ContAboutText{
 	width: 60%;
@@ -411,7 +418,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fa2b6', end
         width: 20%;
 }
 .txtWhats{
-        width: 70%;
+        width: 75%;
 }
 
 .FourBanner{
@@ -605,6 +612,14 @@ li, a {
     height: 45px;
 }
 
+.checkedTerminos{
+	display: block !important;
+	font-size: 15px !important;
+	padding-left: 0% !important;
+	width: 30% !important;
+	padding-right: 5% !important;
+	text-align: -webkit-left;
+}
 
 .input-field {
     width: 100%;
@@ -951,11 +966,12 @@ ul.breadcrumb li a:hover {
 }
 
 .txtBelive{
-    color: var(--whitteSolid);
-    padding: 50px;
-    font-weight: bold;
-    font-size: .9em;
-    margin: 0px;
+	color: var(--whitteSolid);
+	padding-top: 30px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 1em;
+	margin: 0px;
 }
 .ContVAC{
     width: 100%;
@@ -1021,18 +1037,27 @@ ul.breadcrumb li a:hover {
 
 .txtAli, .txtCon{
 	padding: 30px;
-	display: flex;
+	padding-left: 0px;
+	display: block;
 	width: 70%;
 	height: auto;
 }
 .texto-vertical-1 {
-    font-size: 2em;
-    text-align: -webkit-right;
-    writing-mode: vertical-lr;
-    padding: 10px;
-    color: var(--whitteSolid);
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 20px;
+	writing-mode: horizontal-tb;
+	padding: 10px;
+	color: var(--whitteSolid);
 }
-
+.txtContMercado{
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	text-shadow: 1px 3px 10px #423535;
+	/* position: absolute; */
+	margin-top: 0px;
+}
 .ContSliderEspecial{
     /* position: relative; */
     display: flex;
@@ -2852,14 +2877,14 @@ margin-bottom: 50px;
 }
 
 .textCotiza{
-	position: relative;
-	width: 65%;
-	height: 20px;
-	padding: 13px;
-	margin-left: 2%;
-	display: flex;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	    position: relative;
+	    width: 65%;
+	    height: 0px;
+	    padding: 15px;
+	    margin-left: 2%;
+	    display: flex;
+	    margin-top: 3px;
+	    margin-bottom: 3px;
 }
 .cotiza1A{
 	    width: 55%;
@@ -2981,8 +3006,98 @@ margin: 20px;
 	    font-weight: 700;
 }
 
-
-
 .ingresaUser{
 	display: flex;
+}
+
+#municipios, #colonias, #inputColonia{
+	display: none;
+}
+.imgNoticeFooter{
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.bolet {
+	list-style-type: disc !important;
+	color: var(--whitteSolid);
+	display: block;
+	margin: 0px;
+	margin-top: .8em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 5%;
+	width: 95%;
+	font-size: small;
+}
+
+.videoYbe{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: auto;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+.whatContac{
+	font-size: 1em !important;
+}
+.booletword{
+	color: black !important;
+	font-size: 1.3em;
+}
+.h3, h3 {
+    font-size: 1.2em !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.contNotices{
+	margin-bottom: 5%;
+	display: flex;
+}
+
+.contNotIMG{
+	padding: 2%;
+	width: 28%;
+	height: auto;
+}
+
+.contNotTXT{
+	width: 78%;
+	height: auto;
+	padding: 2%;
+}
+
+.imgsNotices{
+	width: 90%;
+	height: auto;
+}
+
+.whoNotice{
+	font-size: 1em;
+	text-align: left;
+}
+
+.tittleNotice{
+	font-size: 1.3em;
+  padding: 5px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	border-bottom: var(--grey1) solid 1px;
+}
+
+.subtNotice{
+	font-size: 1em;
+	padding: 5px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.adjuntoNotice{
+	padding: 5px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	text-align: right;
 }

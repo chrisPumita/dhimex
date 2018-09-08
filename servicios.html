@@ -311,7 +311,7 @@ li.fancyTab.active a {
 						        <div class="arrow-down">
 						          <div class="arrow-down-inner"></div>
 						        </div> <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0">
-											<span class="fa fa-pencil-square-o"></span><span class="hidden-xs">Ingresar</span></a>
+											<span class="fa fa-pencil-square-o"></span><span class="hidden-xs">Ingresar Cotización</span></a>
 						        <div class="whiteBlock"></div>
 						      </li>
 						    </ul>
@@ -325,78 +325,69 @@ li.fancyTab.active a {
 														Arma tu solicitud de Servicio, Refacciones y Mantenimiento a todos los sistemas, (full service).
 													</p>
 						              <p>
+														<form class="" action="busca.php" method="post">
+														<!-- Material inline 1 -->
+															<label class="radio-inline">
+																<input type="radio" name="optradio" onclick="newUser();"  checked>Nuevo Cliente
+															</label>
+															<label class="radio-inline">
+																<input type="radio" name="optradio" onclick="MostrarICliente();">Ingresar No de Cliente
+															</label>
+
+															<div id="iUser" class="form-group userB">
+																<div class="ingresaUser">
+																	<input type="text" class="form-control" id="txtidUser" placeholder="Ingrese ID" name="IdUserBrouse" required="Please">
+																	<input type="email" class="form-control" id="txtidmail" placeholder="Email" name="IdUserBrouse" required="Please">
+																	<button type="submit" class="btn btnCotizador">Buscar</button>
+																</div>
+															</div>
+														</form>
 														<div class="container" style="width:  100%;	">
+															<form id="formUserIn" class="" action="guardaSol.php" method="post">
 															<div class="caja0">
 																	<div class="caja1">
-																		<!-- Material inline 1 -->
-																		<form class="" action="busca.php" method="post">
-																			<label class="radio-inline">
-																				<input type="radio" name="optradio" onclick="OcultarICliente();"  checked>Nuevo Cliente
-																			</label>
-																			<label class="radio-inline">
-																				<input type="radio" name="optradio" onclick="MostrarICliente();">Ingresar No de Cliente
-																			</label>
-
-																			<script type="text/javascript">
-																			function OcultarICliente(){
-																					document.getElementById('iUser').style.display ='none';
-																					}
-																					function MostrarICliente(){
-																					document.getElementById('iUser').style.display = 'flex';
-																					}
-																			</script>
-
-																			<div id="iUser" class="form-group userB">
-																				<div class="ingresaUser">
-																					<input type="text" class="form-control" id="idUser" placeholder="Ingrese ID" name="IdUserBrouse" required="Please">
-																					<input type="email" class="form-control" id="idmail" placeholder="Email" name="IdUserBrouse" required="Please">
-																					<button type="submit" class="btn btnCotizador">Buscar</button>
-																				</div>
-																			</div>
-																	</form>
-															<form class="" action="index.html" method="post">
 																		<div class="">
 																			<p class="textoForms">
 																				Datos del Cliente:
 																			</p>
 																			<div class="cotizaForm">
 																				<label for="asunto"><b>*Nombre:</b></label>
-																				<input class="textCotiza" type="text" placeholder="Nombre" name="nombre" required="Please">
+																				<input id="nombreClienteI" class="textCotiza" type="text" placeholder="Nombre" name="nombre" required="Please">
 																			</div>
 																			<div class="cotizaForm">
-																				<label for="asunto"><b>*Apellido Paterno:</b></label>
+																				<label for="aPaterno"><b>*Apellido Paterno:</b></label>
 																				<input class="textCotiza" type="text" placeholder="Apellido Paterno" name="aPaterno" required="Please">
 																			</div>
 																			<div class="cotizaForm">
-																				<label for="asunto"><b>Apellido Materno:</b></label>
+																				<label for="aMaterno"><b>Apellido Materno:</b></label>
 																				<input class="textCotiza" type="text" placeholder="Apellido Materno" name="aMaterno">
 																			</div>
 																			<div class="cotizaForm">
-																				<label for="asunto"><b>*Telefono:</b></label>
+																				<label for="telefono"><b>*Telefono:</b></label>
 																				<input class="textCotiza" type="tel" placeholder="Telefono" name="telefono" required="Please">
 																			</div>
 																			<div class="cotizaForm">
-																				<label for="asunto"><b>Celular:</b></label>
-																				<input class="textCotiza" type="tel" placeholder="Celular" name="telefono" required="Please">
+																				<label for="celular"><b>Celular:</b></label>
+																				<input class="textCotiza" type="tel" placeholder="Celular" name="celular" required="Please">
 																			</div>
 																			<div class="cotizaForm">
-																				<label for="asunto"><b>*Correo Electrónico:</b></label>
-																				<input class="textCotiza" type="tel" placeholder="Correo Electrónico" name="telefono" required="Please">
+																				<label for="correo"><b>*Correo Electrónico:</b></label>
+																				<input class="textCotiza" type="tel" placeholder="Correo Electrónico" name="correo" required="Please">
 																			</div>
 																		</div>
 																	</div>
-																	<div class="caja2">
+																	<div id="formSoc" class="caja2">
 																		<div class="">
 																			<p class="textoForms">
 																				Agregar nueva Cotización:
 																			</p>
 																			<div class="cotizaForm">
 																				<label for="asunto"><b>*Nombre/Razón Social:</b></label>
-																				<input class="textCotiza cotiza1A" type="text" placeholder="Nombre" name="nombre" required="Please">
+																				<input id="razon" class="textCotiza cotiza1A" type="text" placeholder="Nombre" name="razon" required="Please">
 																			</div>
 																			<div class="cotizaForm">
 																				<label for="asunto"><b>Estado:</b></label>
-																				<select class="DespCotiza" name="estados">
+																				<select id="estados" class="DespCotiza" name="estados" onchange="verficaEstado(this.value)">
 																					<option value="0">Elija un Estado</option>
 																					<option value="1">Aguascalientes</option>
 																					<option value="2">Baja California</option>
@@ -432,48 +423,24 @@ li.fancyTab.active a {
 																					<option value="32">Zacatecas</option>
 																				</select>
 																			</div>
-																			<div class="cotizaForm">
+																			<div id="municipios" class="cotizaForm">
 																				<label for="asunto"><b>Delegación/Municipio:</b></label>
-																				<select class="DespCotiza" name="municipios">
-																					<option selected value="0"> Elige una opción </option>
-																					<optgroup label="CDMX">
-																						<option value="0" selected>Delegacion/Municipio</option>
-																						<option value="2">Azcapotzalco</option>
-																						<option value="3">Coyoacan</option>
-																						<option value="4">Cuajimalpa de Morelos</option>
-																						<option value="5">Gustavo A. Madero</option>
-																						<option value="6">Iztacalco</option>
-																						<option value="7">Iztapalapa</option>
-																						<option value="8">La Magdalena Contreras</option>
-																						<option value="9">Milpa Alta</option>
-																						<option value="10">Alvaro Obregon</option>
-																						<option value="11">Benito Juarez</option>
-																						<option value="12">Cuauhtemoc</option>
-																						<option value="13">Miguel Hidalgo</option>
-																						<option value="14">Venustiano Carranza</option>
-																					</optgroup>
-																					<optgroup label="Estado de México">
-																						<option value="15">Tlalnepantla</option>
-																						<option value="16">Naucalpan</option>
-																						<option value="17">Tultitlán</option>
-																						<option value="18">Huixquilucan</option>
-																						<option value="19">Nezahualcoyotl</option>
-																						<option value="20">No está en lista</option>
-																					</optgroup>
+																				<select id="selectMunicipios" class="DespCotiza" name="selectMunicipios" onchange="verficaMunicipio(this.value)">
+																					<option selected value="0"></option>
 																				</select>
 																			</div>
-																			<div class="cotizaForm">
+																			<div id="colonias" class="cotizaForm">
 																				<label for="asunto"><b>Colonia:</b></label>
-																				<select class="DespCotiza" name="estados">
-																					<option value="0">Seleccione Colonia</option>
+																				<select id="selectColonia" class="DespCotiza" name="selectColonia" onchange="verficaColonia(this.value)">
+																					<option value="0">Otra</option>
 																					<option value="1">Colonia 1</option>
-																					<option value="2">Baja California</option>
-																					<option value="3">Baja California Sur</option>
-																					<option value="4">Campeche</option>
-																					<option value="5">Coahuila de Zaragoza</option>
+																					<option value="2">Colonia 2</option>
+																					<option value="3">Colonia 3</option>
+																					<option value="4">Colonia 4</option>
+																					<option value="5">Colonia 5</option>
 																				</select>
 																			</div>
-																			<div class="cotizaForm">
+																			<div id="inputColonia" class="cotizaForm">
 																				<label for="asunto"><b>Colonia:</b></label>
 																				<input class="textCotiza cotiza1A" type="text" placeholder="Escriba su Colonia" name="telefono" required="Please">
 																			</div>
@@ -483,7 +450,7 @@ li.fancyTab.active a {
 																					<label for="date">Fecha: </label>
 																					<input class="hoursSelect" id="date" type="date">
 																					<label for="horaIni"><b>de: </b></label>
-																					<select class="hoursSelect" name="horaIni">
+																					<select id="horaIni" class="hoursSelect" name="horaIni">
 																						<option value="">Elija Hora:</option>
 																						<option value="0">00:00 hrs</option>
 																						<option value="1">01:00 hrs</option>
@@ -512,8 +479,8 @@ li.fancyTab.active a {
 																						<option value="24">24:00 hrs</option>
 																					</select>
 
-																					<label for="horaIni"><b>a: </b></label>
-																					<select class="hoursSelect" name="horaIni">
+																					<label for="horaEnd"><b>a: </b></label>
+																					<select id="horaEnd" class="hoursSelect" name="horaEnd">
 																						<option value="">Elija Hora:</option>
 																						<option value="0">00:00 hrs</option>
 																						<option value="1">01:00 hrs</option>
@@ -545,43 +512,52 @@ li.fancyTab.active a {
 																				<!--DATE TIME-->
 																			</div>
 																			<!---->
+																			<div id="mensaje" class="cotizaForm">
+
+																			</div>
 																			<div class="cotizaForm">
 																				<div class="contBOtonesCotiza">
 																				 <input type="reset" name="reset" value="LIMPIAR" class="btnClean bt">
-																				 <input type="reset" name="add" value="AGREGAR" class="btnClean bt">
+																				 <input type="button" name="add" value="AGREGAR" class="btnClean bt" onclick="addService();">
 																				</div>
 																			</div>
 																		</div>
 																	</div>
 																</div>
 															<!--END FORM-->
-															<div class="caja4">
+															<div id="tblAgregadosInicial"  class="caja4">
 																<p class="textoForms">Cotizaciones Agregadas:</p>
-																<table class="tg tblDatas">
-																  <tr>
+																<table id="tblCotizaciones" class="tg tblDatas">
+																  <tr >
 																    <th class="tg-hgcj">RAZÓN SOCIAL</th>
 																    <th class="tg-hgcj">LUGAR</th>
 																    <th class="tg-amwm">FECHAS</th>
 																    <th class="tg-amwm">TOTAL</th>
+																    <th class="tg-amwm">HORAS</th>
 																    <th class="tg-amwm">ACCIÓN</th>
 																  </tr>
-																  <tr>
+																	<!--
+																  <tr id="tr1">
 																    <td class="tg-mrzz">ACEROS SA DE CV</td>
 																    <td class="tg-mrzz">NAUCALPAN</td>
 																    <td class="tg-buh4">29/06/2018</td>
 																    <td class="tg-buh4">$ 1500 USD</td>
-																    <td class="tg-buh4"><input id="btnAuto" type="reset" name="reset" value="CANCELAR" class="btnClean"></td>
+																    <td class="tg-buh4"><input id="btnAuto" type="reset" name="reset" value="QUITAR" class="btnClean" onclick="deleteFila('tr1')"></td>
 																  </tr>
-																  <tr>
+																  <tr id="tr2">
 																    <td class="tg-0lax">MECANISMO MX</td>
 																    <td class="tg-0lax">TLALNEPANTLA</td>
 																    <td class="tg-0lax">31/OCT/2018</td>
 																    <td class="tg-0lax">$ 300 US</td>
-																    <td class="tg-0lax"><input id="btnAuto" type="reset" name="reset" value="CANCELAR" class="btnClean"></td>
+																    <td class="tg-0lax"><input id="btnAuto" type="reset" name="reset" value="QUITAR" class="btnClean" onclick="deleteFila('tr2')"></td>
 																  </tr>
+																-->
 																</table>
 															</div>
-															<button type="submit" class="btn btnCotizador btnSendCot">GENERAR COTIZACIÓN</button>
+																<div id="demo" class="demo">
+
+																</div>
+															<button id="btnGenCot" type="submit" class="btn btnCotizador btnSendCot" onclick="guardaSolicitud();">GENERAR COTIZACIÓN</button>
 														</form>
 													</div>
 						             </p>
@@ -612,8 +588,6 @@ li.fancyTab.active a {
 															<div class="dataIngreso">
 																<p><b>No Solicitud:</b> 73474774837&nbsp;&nbsp;&nbsp;&nbsp;<b>Fecha de Registro:</b> 24 de OCtubre de 2018</p>
 															</div>
-
-
 											<div class="caja0">
 													<div class="caja1">
 														<div class="">
@@ -653,96 +627,38 @@ li.fancyTab.active a {
 													<div class="caja2">
 														<div class="">
 															<p class="textoForms">
-																Datos del Cliente:
+																Datos de Facturación:
 															</p>
 															<div class="cotizaForm">
 																<label for="asunto"><b>*Nombre/Razón Social:</b></label>
-																<input class="textCotiza cotiza1A" type="text" placeholder="Nombre" name="nombre" required="Please">
+																<input class="textCotiza cotiza1A" type="text" placeholder="Razon Social" name="razonSocial" required="Please">
 															</div>
 															<div class="cotizaForm">
-																<label for="asunto"><b>Estado:</b></label>
-																<select class="DespCotiza" name="estados">
-																	<option value="0">Elija un Estado</option>
-																	<option value="1">Aguascalientes</option>
-																	<option value="2">Baja California</option>
-																	<option value="3">Baja California Sur</option>
-																	<option value="4">Campeche</option>
-																	<option value="5">Coahuila de Zaragoza</option>
-																	<option value="6">Colima</option>
-																	<option value="7">Chiapas</option>
-																	<option value="8">Chihuahua</option>
-																	<option value="9">Ciudad de México</option>
-																	<option value="10">Durango</option>
-																	<option value="11">Guanajuato</option>
-																	<option value="12">Guerrero</option>
-																	<option value="13">Hidalgo</option>
-																	<option value="14">Jalisco</option>
-																	<option value="15">México</option>
-																	<option value="16">Michoacán de Ocampo</option>
-																	<option value="17">Morelos</option>
-																	<option value="18">Nayarit</option>
-																	<option value="19">Nuevo León</option>
-																	<option value="20">Oaxaca</option>
-																	<option value="21">Puebla</option>
-																	<option value="22">Querétaro</option>
-																	<option value="23">Quintana Roo</option>
-																	<option value="24">San Luis Potosí</option>
-																	<option value="25">Sinaloa</option>
-																	<option value="26">Sonora</option>
-																	<option value="27">Tabasco</option>
-																	<option value="28">Tamaulipas</option>
-																	<option value="29">Tlaxcala</option>
-																	<option value="30">Veracruz de Ignacio de la Llave</option>
-																	<option value="31">Yucatán</option>
-																	<option value="32">Zacatecas</option>
-																</select>
+																<label for="asunto"><b>Calle:</b></label>
+																<input class="textCotiza cotiza1A" type="text" placeholder="Calle" name="calle" required="Please">
+															</div>
+															<div class="cotizaForm">
+																<label for="asunto"><b>Numero:</b></label>
+																<input class="textCotiza cotiza1A" type="text" placeholder="Calle" name="calle" required="Please">
+															</div>
+															<div class="cotizaForm">
+																<label for="asunto"><b>Colonia</b></label>
+																<input class="textCotiza cotiza1A" type="text" placeholder="Estado" name="nombre" required="Please">
 															</div>
 															<div class="cotizaForm">
 																<label for="asunto"><b>Delegación/Municipio:</b></label>
-																<select class="DespCotiza" name="municipios">
-																	<optgroup label="CDMX">
-																		<option value="0">Delegacion/Municipio</option>
-																		<option value="2">Azcapotzalco</option>
-																		<option value="3">Coyoacan</option>
-																		<option value="4">Cuajimalpa de Morelos</option>
-																		<option value="5">Gustavo A. Madero</option>
-																		<option value="6">Iztacalco</option>
-																		<option value="7">Iztapalapa</option>
-																		<option value="8">La Magdalena Contreras</option>
-																		<option value="9">Milpa Alta</option>
-																		<option value="10">Alvaro Obregon</option>
-																		<option value="11">Benito Juarez</option>
-																		<option value="12">Cuauhtemoc</option>
-																		<option value="13">Miguel Hidalgo</option>
-																		<option value="14">Venustiano Carranza</option>
-																	</optgroup>
-																	<optgroup label="Estado de México">
-																		<option value="15">Tlalnepantla</option>
-																		<option value="16">Naucalpan</option>
-																		<option value="17">Tultitlán</option>
-																		<option value="18">Huixquilucan</option>
-																		<option value="19">Nezahualcoyotl</option>
-																		<option value="20">No está en lista</option>
-																	</optgroup>
-																</select>
+																<input class="textCotiza cotiza1A" type="text" placeholder="Delegacion o municpio" name="nombre" required="Please">
 															</div>
 															<div class="cotizaForm">
 																<label for="asunto"><b>Colonia:</b></label>
-																<select class="DespCotiza" name="estados">
-																	<option value="0">Seleccione Colonia</option>
-																	<option value="1">Colonia 1</option>
-																	<option value="2">Baja California</option>
-																	<option value="3">Baja California Sur</option>
-																	<option value="4">Campeche</option>
-																	<option value="5">Coahuila de Zaragoza</option>
-																</select>
+																<input class="textCotiza cotiza1A" type="text" placeholder="Colonia" name="nombre" required="Please">
 															</div>
 															<div class="cotizaForm">
 																<label for="asunto"><b>RFC:</b></label>
 																<input class="textCotiza cotiza1A" type="text" placeholder="Escriba su RFC con HOMOCLAVE" name="telefono" required="Please">
 															</div>															<div class="cotizaForm">
 																<label for="asunto"><b>Correo Electrónico:</b></label>
-																<input class="textCotiza cotiza1A" type="text" placeholder="Escriba el correo electrónico" name="telefono" required="Please">
+																<input class="textCotiza cotiza1A" type="text" placeholder="EMail para envio de factura" name="telefono" required="Please">
 															</div>
 														</div>
 													</div>
@@ -780,6 +696,9 @@ li.fancyTab.active a {
 												  </tr>
 												</tbody></table>
 											</div>
+											<div id="showTot" class="showTot">
+
+											</div>
 											<button type="submit" class="btn btnCotizador btnSendCot">GENERAR COTIZACIÓN</button>
 										</form>
 						            </p>
@@ -805,14 +724,16 @@ li.fancyTab.active a {
 				<div class="ContTxtServ2">
 					<div class="txtService txtIzq">
 						<h2 class="tService">PROYECTO</h2>
-						<p>
-							Asesoría especializada en equipos y sistemas hidráulicos a través de:                                      <br>
-							•    Congresos          <br>
-							•    Cursos de capacitación <br>
-							•    Elaboración de especificaciones <br>
-							•    Visitas periódicas                  <br>
-							•    Etcétera…
+						<p class="booletword">
+							Asesoría especializada en equipos y sistemas hidráulicos a través de:
 						</p>
+						<ul class="bolet">
+							<li class="bolet booletword"> •  Congresos</li>
+							<li class="bolet booletword"> •  Cursos de capacitación</li>
+							<li class="bolet booletword"> •  Elaboración de especificaciones</li>
+							<li class="bolet booletword"> •  Visitas periódicas</li>
+							<li class="bolet booletword"> •  Etcétera…</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -821,7 +742,7 @@ li.fancyTab.active a {
 				<div class="ContTxtServ2">
 					<div class="txtService txtDer">
 						<h2 class="tService">Etapa Comercial</h2>
-						<p>
+						<p class="booletword">
 							Seguimiento comercial a las asignaciones y concursos de obras.
 						</p>
 					</div>
@@ -837,8 +758,8 @@ li.fancyTab.active a {
 				<div class="ContTxtServ2">
 					<div class="txtService txtIzq">
 						<h2 class="tService">Construcción</h2>
-						<p>
-							Suministro de equipos y sistemas a las obras proyectadas
+						<p class="booletword">
+							Suministro de equipos y sistemas a las obras proyectadas.
 						</p>
 					</div>
 				</div>
@@ -848,8 +769,8 @@ li.fancyTab.active a {
 							<div class="ContTxtServ2">
 								<div class="txtService txtDer">
 									<h2 class="tService">Puesta en Marcha</h2>
-									<p>
-										Asesoría en la instalación, calibración y puesta en marcha de sistemas y equipos
+									<p class="booletword">
+										Asesoría en la instalación, calibración y puesta en marcha de sistemas y equipos.
 									</p>
 								</div>
 							</div>
@@ -881,10 +802,10 @@ li.fancyTab.active a {
 				<div class="ContTxtServ2">
 					<div class="txtService txtIzq">
 						<h2 class="tService">CAPACITACIÓN</h2>
-						<p>
+						<p class="booletword">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco
+							quis nostrud exercitation ullamco.
 						</p>
 						<a href="capacitacion.php"><button class="buttonPie btnService" style="vertical-align:middle"><span>Ver Cursos</span></button></a>
 					</div>
@@ -895,7 +816,7 @@ li.fancyTab.active a {
 				<div class="ContTxtServ2">
 					<div class="txtService txtDer">
 						<h2 class="tService">VIDEOCONFERENCIAS</h2>
-						<p>
+						<p class="booletword">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation.
@@ -919,40 +840,38 @@ li.fancyTab.active a {
 					<a href="index.html" "email me"><img class="logoPie" src="image/logo-dhimex.png"></a>
 					<p>(+52) 55 • 5356 • 6530 </p>
 					<p>contacto@dhimex.com</p>
-					<p>Toronjil No. 180- A Victorias de las Democracias CDMX. CP 02810</p>
+					<p>Toronjil No. 180-A Victoria de las Democracias, CDMX, C.P. 02810</p>
 					<a href="contacto.html#form" title="Contactar a DHIMEX">
 						<button class="buttonPie" style="vertical-align:middle"><span class="txtBTN">Contacto </span></button></a>
 				</div>
 				<div class="ContLinksPie borderPie">
-					<h3 class="titlePlie">SECTORES DE MERCADO</h3>
-					<ul class="linksPies">
-						<a href="about.html#sectores" title="Servicios"><li>Construcción Comercial</li></a>
-						<a href="about.html#sectores" title="Servicios"><li>Construccion Residencial</li></a>
-						<a href="about.html#sectores" title="Servicios"> <li>Indistria Lijera</li></a>
-					</ul>
-					<h3 class="titlePlie">NUESTROS SERVICIOS</h3>
-					<ul class="linksPies">
-					  <a href="capacitacion.php" title="Servicios"><li>Capacitación </li></a>
-					  <a href="capacitacion.php" title="Servicios"><li>Cursos</li></a>
-					  <a href="https://dhimex.webex.com/mw3300/mywebex/default.do?siteurl=dhimex"><li>Conferencias</li></a>
-					  <a href="http://epump-flo.com/reg/login.aspx?ReturnUrl=%2fpumpselection%2fstorefront.aspx%3fdirname%3ddhimex&dirname=dhimex" title="">
-					  <li>Software</li></a>
-					</ul>
+					<h3 class="titlePlie">EVENTOS Y NOTICIAS</h3>
+					<div class="imgNoticeFooter contenedorIMG">
+						<a href="noticias.html" title="Ver noticias y eventos">
+							<img class="imagenAjustada img" src="image/events/eventFooter.JPG"></a>
+
+					</div>
 				</div>
 				<div class="ContLinksPie borderPie">
 					<h3 class="titlePlie">ENLACES RÁPIDOS</h3>
 					<ul class="linksPies">
-					  <a href="" title=""></a><li>Aviso de Privacidad</li>
-					  <li>Legal</li>
-					  <li>Bolsa de Trabajo</li>
-					  <li>Noticias</li>
+					  <a href="" title=""></a>
+						<li>Aviso de Privacidad</li>
+						<a href="http://epump-flo.com/reg/login.aspx?ReturnUrl=%2fpumpselection%2fstorefront.aspx%3fdirname%3ddhimex&dirname=dhimex" title="">
+							<li>Software</li></a>
+					</ul>
+					<h3 class="titlePlie">NUESTROS SERVICIOS</h3>
+					<ul class="linksPies">
+						<a href="capacitacion.php" title="Capacítate"><li>Capacitación </li></a>
+						<a href="servicios.html#fancyTabWidget" title="Cotizador de servicios"><li>Servicio Post-Venta </li></a>
+						<a href="https://dhimex.webex.com/mw3300/mywebex/default.do?siteurl=dhimex" title="Accede a conferencias via WebEx"><li>Conferencias</li></a>
 					</ul>
 
 					<h3 class="titlePlie">Suscribete A Nuestro Newsletter </h3>
-					<form class="news" action="index_submit" method="get" accept-charset="utf-8">
+					<form class="news" action="newsletther.php" method="POST" accept-charset="utf-8">
 						  <div class="input-container">
-						    <input class="input-field" type="text" placeholder="Escriba su correo electrónico" name="usrnm">
-						    <button class="buttonPie" style="vertical-align:middle"><span class="txtBTN">Enviar </span></button>
+						    <input class="input-field" type="email" placeholder="Escriba su correo electrónico" name="correo_news" required>
+						    <button class="buttonPie" style="vertical-align:middle"><span>Enviar </span></button>
 						  </div>
 
 					</form>
@@ -968,70 +887,8 @@ li.fancyTab.active a {
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript">
 
-$(document).ready(function() {
-
-
-
-	var numItems = $('li.fancyTab').length;
-
-
-			if (numItems == 12){
-				$("li.fancyTab").width('8.3%');
-			}
-			if (numItems == 11){
-				$("li.fancyTab").width('9%');
-			}
-			if (numItems == 10){
-				$("li.fancyTab").width('10%');
-			}
-			if (numItems == 9){
-				$("li.fancyTab").width('11.1%');
-			}
-			if (numItems == 8){
-				$("li.fancyTab").width('12.5%');
-			}
-			if (numItems == 7){
-				$("li.fancyTab").width('14.2%');
-			}
-			if (numItems == 6){
-				$("li.fancyTab").width('16.666666666666667%');
-			}
-			if (numItems == 5){
-				$("li.fancyTab").width('20%');
-			}
-			if (numItems == 4){
-				$("li.fancyTab").width('25%');
-			}
-			if (numItems == 3){
-				$("li.fancyTab").width('33.3%');
-			}
-			if (numItems == 2){
-				$("li.fancyTab").width('50%');
-			}
-
-
-
-
-	});
-
-$(window).load(function() {
-
-$('.fancyTabs').each(function() {
-
-	var highestBox = 0;
-	$('.fancyTab a', this).each(function() {
-
-		if ($(this).height() > highestBox)
-			highestBox = $(this).height();
-	});
-
-	$('.fancyTab a', this).height(highestBox);
-
-});
-});
-	</script>
 	<script src="js/effects.js"></script>
+	<script src="js/cotiza.js"></script>
 </body>
 </html>
